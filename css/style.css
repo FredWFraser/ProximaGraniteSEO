@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    /* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
+    /* background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); */
+    /* background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%); */
+    /* background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); */
+    /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+    /* background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%); */
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
