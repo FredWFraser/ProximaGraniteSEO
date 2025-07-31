@@ -1,7 +1,51 @@
 body {
     margin: 0;
     height: 100vh;
+    background: #c3cfe2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5f7fa, #c3cfe2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 70px; /* Adjust to match your header's height */
+}
+
+header {
+    background: #00416A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E4E5E6, #00416A);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle depth */
+    padding: 0.5rem 1rem;
+}
+
+footer {
     background: #00416A; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E4E5E6, #00416A);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+/* Make all nav links black */
+.nav-pills .nav-link {
+  color: black !important;
+}
+
+/* Make active nav link black (override Bootstrap's blue) */
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: bold; /* Optional: make it stand out a bit */
+}
+
+
+
+
+
+
+
+
+
+
+
