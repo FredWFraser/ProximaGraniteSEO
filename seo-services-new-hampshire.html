@@ -52,34 +52,106 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Search Engine Optimization",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Proxima Granite SEO",
-          "url": "https://www.proximagranite.com",
-          "telephone": "+1-603-560-1846"
-        },
-        "areaServed": {
-          "@type": "State",
-          "name": "New Hampshire"
-        },
-        "description": "SEO services including keyword research, technical SEO, local SEO, and website audits for New Hampshire businesses."
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://www.proximagranite.com/seo-services-new-hampshire.html",
-        "url": "https://www.proximagranite.com",
-        "name": "Proxima Granite SEO",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.jpeg",
-          "width": 200,
-          "height": 200
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Proxima Granite",
+            "url": "https://www.proximagranite.com",
+            "logo": "https://www.proximagranite.com/images/proxima-granite-seo-logo.jpeg",
+            "sameAs": [
+              "https://www.facebook.com/proxima.granite.seo/",
+              "https://www.linkedin.com/in/frederickwfraser/"
+            ],
+            "serviceOffered": [
+              {
+                "@type": "Service",
+                "name": "Website Audit & SEO Analysis",
+                "serviceType": "SEO Analysis",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#website-audit-seo",
+                "description": "A full diagnostic of your website's performance, structure, and search visibility. Includes site speed and mobile responsiveness testing, crawl error detection, and SEO scoring with actionable insights."
+              },
+              {
+                "@type": "Service",
+                "name": "On-Page SEO Optimization",
+                "serviceType": "On-Page SEO",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#on-page-seo",
+                "description": "Optimization of titles, meta descriptions, headings, images, and internal linking to improve search engine visibility."
+              },
+              {
+                "@type": "Service",
+                "name": "Keyword Research & Strategy",
+                "serviceType": "Keyword SEO",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#keyword-research",
+                "description": "Comprehensive keyword research and strategic planning to target high-value search terms that drive traffic and conversions."
+              },
+              {
+                "@type": "Service",
+                "name": "Local SEO Services",
+                "serviceType": "Local SEO",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#local-seo",
+                "description": "Improve visibility in Google Maps and local search results. Includes business profile optimization, citation building, and review management."
+              },
+              {
+                "@type": "Service",
+                "name": "Technical SEO",
+                "serviceType": "Technical SEO",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#technical-seo",
+                "description": "Ensuring your website is technically sound for search engines. Covers site architecture, crawlability, schema markup, and indexation."
+              },
+              {
+                "@type": "Service",
+                "name": "Performance Tracking & Reporting",
+                "serviceType": "SEO Reporting",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#performance-tracking",
+                "description": "Ongoing monitoring of SEO performance with detailed reports on rankings, traffic, conversions, and actionable insights for improvements."
+              },
+              {
+                "@type": "Service",
+                "name": "YouTube SEO",
+                "serviceType": "YouTube SEO",
+                "url": "https://www.proximagranite.com/seo-services-new-hampshire#youtube-seo",
+                "description": "Optimization of YouTube channels and videos to improve rankings, watch time, CTR, and subscriber growth. Includes channel audits, keyword optimization, thumbnail testing, and analytics setup."
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What services do you offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We offer Website Audit & SEO Analysis, On-Page SEO Optimization, Keyword Research & Strategy, Local SEO Services, Technical SEO, Performance Tracking & Reporting, and YouTube SEO."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need all of these SEO services?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not necessarily. Each business has unique needs. We can recommend the most relevant services based on your goals and current website performance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I get started?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can contact us via our website to schedule a consultation. We’ll review your website and business goals, then provide a tailored SEO plan."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you handle YouTube SEO for my channel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We optimize YouTube channels and videos to improve rankings, watch time, CTR, and subscriber growth. We also provide analytics tracking and content recommendations."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -189,6 +261,68 @@
           <li>Strategic insights based on traffic and search data</li>
         </ul>
       </div>
+
+      <br />
+      <br />
+
+      <!-- YouTube SEO Service Card -->
+      <style>
+        /* Forcefully reset list styling */
+        #youtube-seo .service-highlights,
+        #youtube-seo .service-highlights li {
+          list-style: none !important; /* override all bullets */
+          margin: 0 !important; /* reset margins */
+          padding: 0 !important; /* reset padding */
+        }
+      </style>
+
+      <section
+        id="youtube-seo"
+        class="service-card"
+        aria-labelledby="youtube-seo-title"
+      >
+        <div class="service-icon" aria-hidden="true">
+          <!-- Play button in a red rounded rectangle (accessible SVG icon) -->
+          <svg
+            viewBox="0 0 64 64"
+            width="40"
+            height="40"
+            role="img"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <rect
+              x="2"
+              y="8"
+              rx="10"
+              ry="10"
+              width="60"
+              height="48"
+              fill="#FF0000"
+            ></rect>
+            <polygon points="27,22 27,42 45,32" fill="#FFFFFF"></polygon>
+          </svg>
+        </div>
+
+        <div class="service-content">
+          <h3 id="youtube-seo-title">🎯 YouTube SEO</h3>
+          <p class="service-blurb">
+            Optimize your channel and videos to rank in YouTube & Google, boost
+            watch time, and grow subscribers.
+          </p>
+
+          <ul class="service-highlights">
+            <li>Channel & video audit (content, structure, branding)</li>
+            <li>
+              Keyword & metadata optimization (titles, descriptions, tags)
+            </li>
+            <li>Thumbnail testing to improve CTR</li>
+            <li>Chapters, end screens & cards for retention</li>
+            <li>Content strategy & upload schedule</li>
+            <li>Analytics setup & performance reporting</li>
+          </ul>
+        </div>
+      </section>
 
       <hr class="my-5" />
 
