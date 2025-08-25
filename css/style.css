@@ -39,6 +39,56 @@ footer {
   font-weight: bold; /* Optional: make it stand out a bit */
 }
 
+/* Basic styling for the form container */
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      font-family: sans-serif;
+    }
+
+    /* Style for the labels */
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    /* Style for text inputs and the textarea */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* Important for padding and width to work together */
+    }
+
+    /* Specifically control the height of the message box */
+    .contact-form textarea {
+      height: 120px; /* You can adjust this value */
+      resize: vertical; /* Allows user to resize it vertically */
+    }
+
+    /* Style for the submit button */
+    .contact-form button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: grey;
+    }
+
 
 
 
