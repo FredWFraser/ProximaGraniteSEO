@@ -72,6 +72,23 @@
         }
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "Proxima Granite",
+          "url": "https://www.proximagranite.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "proximagranite.gmail.com",
+            "url": "https://www.proximagranite.com/contact-seo-nh"
+          }
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -120,13 +137,30 @@
               <h2>Contact Me</h2>
               <form action="https://formspree.io/f/myzdyygl" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  autocomplete="off"
+                ></textarea>
 
                 <button type="submit">Send</button>
               </form>
