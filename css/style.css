@@ -107,7 +107,7 @@ footer {
       list-style: none;
     }
 
-    #blog{
+   /* #blog{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -129,7 +129,37 @@ footer {
       background-color: #ffffff;
       border: 1px solid #ececec;
       margin: 20px;
-    }
+    } */
+    
+    /* Ensure the outer container spans full width */
+#blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+/* Center the blog container and limit its width */
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; /* This centers it horizontally */
+  width: 100%;
+}
+
+/* Style for the card */
+.blog-box {
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 20px;
+}
 
     .blog-img {
       width: 100%;
@@ -139,12 +169,12 @@ footer {
     }
 
     .blog-img img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;       /* now it will work */
-  object-position: center; /* centers the crop */
-  max-width: 100%;         /* keeps it from overflowing */
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;       /* now it will work */
+      object-position: center; /* centers the crop */
+      max-width: 100%;         /* keeps it from overflowing */
 }
 
 
