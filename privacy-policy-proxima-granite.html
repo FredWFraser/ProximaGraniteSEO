@@ -182,9 +182,47 @@
 
     <!-- Your include.js script -->
     <script src="js/include.js"></script>
-    <script
+    <!-- <script
       src="//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"
       async
-    ></script>
+    ></script> -->
+
+        <!-- Floating Chat Button -->
+  <style>
+    #chat-trigger {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #344973;
+      color: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 9999;
+    }
+  </style>
+
+  <button id="chat-trigger">💬 Chat with us</button>
+
+  <script>
+    document.getElementById("chat-trigger").addEventListener("click", function () {
+      if (window.tidioChatApi) {
+        window.tidioChatApi.open();
+        return;
+      }
+
+      var tidioScript = document.createElement("script");
+      tidioScript.src = "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
+      tidioScript.async = true;
+      document.body.appendChild(tidioScript);
+
+      this.style.display = "none"; // optional: hide button after loading
+    });
+  </script>
+  <!-- end new chat button code -->
+   
   </body>
 </html>
