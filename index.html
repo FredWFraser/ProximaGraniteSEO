@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Preconnects first -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5ZXN8L90BZ");
+    </script>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Get Found Online with Local SEO in NH | Proxima Granite SEO</title>
-    <meta
-      name="description"
-      content="Proxima Granite SEO helps New Hampshire small businesses grow through expert SEO and local search strategies. Get found online and boost your visibility today."
-    />
-    <link rel="canonical" href="https://www.proximagranite.com" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-
+    <!-- Custom CSS -->
     <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
+
+    <!-- Optional preloads (only if fetched via JS) -->
     <link
       rel="preload"
       href="./header.html"
@@ -35,33 +46,16 @@
       crossorigin="anonymous"
     />
 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-5ZXN8L90BZ");
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+    <title>Get Found Online with Local SEO in NH | Proxima Granite SEO</title>
+    <meta
+      name="description"
+      content="Proxima Granite SEO helps New Hampshire small businesses grow through expert SEO and local search strategies. Get found online and boost your visibility today."
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      />
-    </noscript> -->
+    <link rel="canonical" href="https://www.proximagranite.com" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <script type="application/ld+json">
       {
