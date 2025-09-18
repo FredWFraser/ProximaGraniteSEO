@@ -45,6 +45,20 @@
       as="fetch"
       crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/my-new-best-friend-ai-640.avif"
+      type="image/avif"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/my-new-best-friend-ai-898.avif"
+      type="image/avif"
+      fetchpriority="high"
+    />
     <meta charset="UTF-8" />
     <title>My New Best Friend AI?? | My Strange New Friendship</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -102,13 +116,27 @@
         Talking to AI: My Strange New Friendship
       </h2>
       <br />
-      <img
+      <!-- <img
         class="img-fluid d-block mx-auto mb-4"
         src="./images/my-new-best-friend-ai.jpg"
         alt="AI robot with human woman in close embrace"
         width="640"
         height="427"
         fetchpriority="high"
+      /> -->
+      <img
+        class="d-block mx-auto mb-4"
+        src="./images/my-new-best-friend-ai.jpg"
+        srcset="
+          ./images/my-new-best-friend-ai-640.avif 640w,
+          ./images/my-new-best-friend-ai-898.avif 898w
+        "
+        sizes="(max-width: 640px) 100vw, 640px"
+        width="640"
+        height="427"
+        style="max-width: 100%; height: auto"
+        alt="Professional photo of Fred Fraser, founder of Proxima Granite SEO"
+        title="Image of Proxima Granite SEO Founder Fred Fraser"
       />
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">ChapGBT is my new best friend.</p>
