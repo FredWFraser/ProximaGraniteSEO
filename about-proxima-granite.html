@@ -76,32 +76,32 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Fred Fraser",
-        "image": "https://www.proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
-        "jobTitle": "Founder and SEO Specialist",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Proxima Granite SEO",
-          "url": "https://www.proximagranite.com"
-        },
-        "alumniOf": "Franklin Pierce University",
-        "description": "Fred Fraser is the founder of Proxima Granite SEO, a local SEO company helping small businesses in New Hampshire improve their online visibility."
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://www.proximagranite.com",
-        "url": "https://www.proximagranite.com",
-        "name": "Proxima Granite SEO",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
-          "width": 200,
-          "height": 200
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.proximagranite.com/#organization",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+              "width": 200,
+              "height": 200
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.proximagranite.com/#fred-fraser",
+            "name": "Fred Fraser",
+            "image": "https://www.proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
+            "jobTitle": "Founder and SEO Specialist",
+            "worksFor": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "alumniOf": "Franklin Pierce University",
+            "description": "Fred Fraser is the founder of Proxima Granite SEO, a local SEO company helping small businesses in New Hampshire improve their online visibility."
+          }
+        ]
       }
     </script>
   </head>

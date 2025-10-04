@@ -60,30 +60,53 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://proximagranite.com/seo-case-study-nh.html"
-        },
-        "headline": "How I Grew My SEO Website from Zero to Visibility in New Hampshire's Local Market",
-        "description": "A personal SEO case study showing how I launched and ranked a new local SEO business website from scratch.",
-        "image": "https://proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
-        "author": {
-          "@type": "Person",
-          "name": "Fred Fraser",
-          "url": "https://proximagranite.com/about-proxima-granite.html"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Proxima Granite SEO",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://proximagranite.com/images/proxima-granite-seo-logo.avif",
-            "width": 200,
-            "height": 200
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.proximagranite.com/#organization",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://proximagranite.com/images/proxima-granite-seo-logo.avif",
+              "width": 200,
+              "height": 200
+            },
+            "sameAs": [
+              "https://www.facebook.com/proxima.granite.seo/",
+              "https://www.linkedin.com/in/frederickwfraser/"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.proximagranite.com/#fred-fraser",
+            "name": "Fred Fraser",
+            "url": "https://proximagranite.com/about-proxima-granite.html",
+            "image": "https://proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
+            "jobTitle": "Founder and SEO Specialist",
+            "worksFor": {
+              "@id": "https://www.proximagranite.com/#organization"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "@id": "https://proximagranite.com/seo-case-study-nh.html",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://proximagranite.com/seo-case-study-nh.html"
+            },
+            "headline": "How I Grew My SEO Website from Zero to Visibility in New Hampshire's Local Market",
+            "description": "A personal SEO case study showing how I launched and ranked a new local SEO business website from scratch.",
+            "image": "https://proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
+            "author": {
+              "@id": "https://www.proximagranite.com/#fred-fraser"
+            },
+            "publisher": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "datePublished": "2025-07-25"
           }
-        },
-        "datePublished": "2025-07-25"
+        ]
       }
     </script>
   </head>

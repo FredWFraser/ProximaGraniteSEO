@@ -65,28 +65,46 @@
       rel="canonical"
       href="https://www.proximagranite.com/proxima-granite-seo-blog.html"
     />
-  <script type="application/ld+json">
-  {
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "@id": "https://www.proximagranite.com/#blog",
-  "url": "https://www.proximagranite.com/proxima-granite-seo-blog.html",
-  "name": "Proxima Granite Blog",
-  "description": "Insights on SEO, AI, and digital marketing by Fred Fraser.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Proxima Granite",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.proximagranite.com/#organization",
+      "url": "https://www.proximagranite.com",
+      "name": "Proxima Granite SEO",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+        "width": 200,
+        "height": 200
+      },
+      "sameAs": [
+        "https://www.facebook.com/proxima.granite.seo/",
+        "https://www.linkedin.com/in/frederickwfraser/"
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.proximagranite.com/#blog",
+      "url": "https://www.proximagranite.com/proxima-granite-seo-blog.html",
+      "name": "Proxima Granite Blog",
+      "description": "Insights on SEO, AI, and digital marketing by Fred Fraser.",
+      "publisher": {
+        "@id": "https://www.proximagranite.com/#organization"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+        "width": 200,
+        "height": 200
+      }
     }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif"
-  }
+  ]
 }
-  </script>   
+</script>
+  
   </head>
 
   <body class="blog-body">

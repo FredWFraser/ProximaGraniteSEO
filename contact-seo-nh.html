@@ -61,31 +61,43 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://www.proximagranite.com",
-        "url": "https://www.proximagranite.com",
-        "name": "Proxima Granite SEO",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
-          "width": 200,
-          "height": 200
-        },
-        "contactPoint": [
+        "@graph": [
           {
-            "@type": "ContactPoint",
-            "telephone": "+1-603-560-1846",
-            "contactType": "Customer Service",
-            "areaServed": "US",
-            "availableLanguage": "English",
-            "email": "proximagranite@gmail.com",
-            "url": "https://www.proximagranite.com/contact-seo-nh"
+            "@type": "Organization",
+            "@id": "https://www.proximagranite.com/#organization",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+              "width": 200,
+              "height": 200
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+1-603-560-1846",
+                "contactType": "Customer Service",
+                "areaServed": "US",
+                "availableLanguage": ["English"],
+                "email": "proximagranite@gmail.com",
+                "url": "https://www.proximagranite.com/contact-seo-nh"
+              }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.proximagranite.com/contact-seo-nh",
+            "url": "https://www.proximagranite.com/contact-seo-nh",
+            "name": "Contact Proxima Granite SEO",
+            "isPartOf": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.proximagranite.com/#organization"
+            }
           }
-        ],
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.proximagranite.com/contact-seo-nh"
-        }
+        ]
       }
     </script>
   </head>
@@ -180,8 +192,8 @@
       <div class="ratio ratio-16x9">
         <iframe
           title="Map showing service area around Plaistow, New Hampshire"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28333.387297786757!2d-71.13400384320967!3d42.833506348974144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e31a6e51b6e69b%3A0x5a5e897f9d94e372!2sPlaistow%2C%20NH%2003865!5e0!3m2!1sen!2sus!4v1721146903347!5m2!1sen!2sus"
           width="600"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307620.23117204127!2d-71.19187165160594!3d42.9981950487545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2f1e7f758b87d%3A0xcf9755de89b431b!2sRockingham%20County%2C%20NH!5e0!3m2!1sen!2sus!4v1759502464386!5m2!1sen!2sus"
           height="450"
           style="border: 0"
           allowfullscreen=""

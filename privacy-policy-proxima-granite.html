@@ -58,42 +58,61 @@
       rel="canonical"
       href="https://www.proximagranite.com/privacy-policy-proxima-granite.html"
     />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://www.proximagranite.com/privacy-policy-proxima-granite.html",
-        "url": "https://www.proximagranite.com/privacy-policy-proxima-granite.html",
-        "name": "Privacy Policy",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://www.proximagranite.com/#website",
-          "url": "https://www.proximagranite.com",
-          "name": "Proxima Granite SEO"
-        },
-        "about": {
-          "@type": "PrivacyPolicy",
-          "name": "Proxima Granite SEO Privacy Policy",
-          "datePublished": "2025-09-09",
-          "dateModified": "2025-09-09",
-          "creator": {
-            "@type": "Organization",
-            "name": "Proxima Granite SEO",
-            "url": "https://www.proximagranite.com"
-          },
-          "inLanguage": "en"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Proxima Granite SEO",
-          "url": "https://www.proximagranite.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.proximagranite.com/proxima-granite-seo-logo.avif"
-          }
-        }
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.proximagranite.com/#organization",
+      "name": "Proxima Granite SEO",
+      "url": "https://www.proximagranite.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+        "width": 200,
+        "height": 200
+      },
+      "sameAs": [
+        "https://www.facebook.com/proxima.granite.seo/",
+        "https://www.linkedin.com/in/frederickwfraser/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.proximagranite.com/#website",
+      "url": "https://www.proximagranite.com",
+      "name": "Proxima Granite SEO",
+      "publisher": {
+        "@id": "https://www.proximagranite.com/#organization"
       }
-    </script>
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.proximagranite.com/privacy-policy-proxima-granite.html",
+      "url": "https://www.proximagranite.com/privacy-policy-proxima-granite.html",
+      "name": "Privacy Policy",
+      "isPartOf": {
+        "@id": "https://www.proximagranite.com/#website"
+      },
+      "publisher": {
+        "@id": "https://www.proximagranite.com/#organization"
+      },
+      "about": {
+        "@type": "PrivacyPolicy",
+        "name": "Proxima Granite SEO Privacy Policy",
+        "datePublished": "2025-09-09",
+        "dateModified": "2025-09-09",
+        "creator": {
+          "@id": "https://www.proximagranite.com/#organization"
+        },
+        "inLanguage": "en"
+      }
+    }
+  ]
+}
+</script>
+
   </head>
 
   <body>

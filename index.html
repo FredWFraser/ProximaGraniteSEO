@@ -60,23 +60,61 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://www.proximagranite.com",
-        "name": "Proxima Granite SEO",
-        "url": "https://www.proximagranite.com",
-        "logo": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
-        "image": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
-        "description": "Proxima Granite SEO provides expert local SEO services for small businesses in New Hampshire.",
-        "telephone": "+1-603-560-1846",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Plaistow",
-          "addressRegion": "NH",
-          "postalCode": "03865",
-          "addressCountry": "US"
-        },
-        "areaServed": "New Hampshire",
-        "sameAs": []
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.proximagranite.com/#organization",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+              "width": 200,
+              "height": 200
+            },
+            "sameAs": [
+              "https://www.facebook.com/proxima.granite.seo/",
+              "https://www.linkedin.com/in/frederickwfraser/"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://www.proximagranite.com/#localbusiness",
+            "name": "Proxima Granite SEO",
+            "url": "https://www.proximagranite.com",
+            "image": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+            "description": "Proxima Granite SEO provides expert local SEO services for small businesses in New Hampshire.",
+            "telephone": "+1-603-560-1846",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Plaistow",
+              "addressRegion": "NH",
+              "postalCode": "03865",
+              "addressCountry": "US"
+            },
+            "areaServed": "New Hampshire",
+            "sameAs": [
+              "https://www.facebook.com/proxima.granite.seo/",
+              "https://www.linkedin.com/in/frederickwfraser/"
+            ],
+            "parentOrganization": {
+              "@id": "https://www.proximagranite.com/#organization"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.proximagranite.com/#fred-fraser",
+            "name": "Fred Fraser",
+            "image": "https://www.proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
+            "jobTitle": "Founder and SEO Specialist",
+            "worksFor": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "alumniOf": "Franklin Pierce University",
+            "description": "Fred Fraser is the founder of Proxima Granite SEO, a local SEO company helping small businesses in New Hampshire improve their online visibility.",
+            "url": "https://www.proximagranite.com"
+          }
+        ]
       }
     </script>
   </head>
@@ -120,7 +158,20 @@
           on.
         </p>
         <br />
-        <br />
+        <!-- Reviews Section -->
+        <section class="py-5 text-center">
+          <div class="container">
+            <h2 class="fw-bold text-body-emphasis mb-4">Reviews</h2>
+            <br />
+            <img
+              src="./images/google-five-star-reviews.avif"
+              alt="Proxima Granite SEO company reviews"
+              class="img-fluid mx-auto d-block"
+              style="width: 100%; max-width: 600px; height: auto"
+              loading="lazy"
+            />
+          </div>
+        </section>
         <br />
         <h2 class="fw-bold text-body-emphasis">Etymology of Our Name</h2>
         <br />
@@ -133,16 +184,21 @@
           strive to be the clear choice for New Hampshire businesses searching
           for a better online presence.
         </p>
-
-        <img
+        <!-- <img
           src="./images/proxima-centauri.jpg"
           alt="Hubble image of Proxima Centauri, the closest star to our Sun"
           class="img-fluid rounded shadow"
           width="790"
           height="593"
           loading="lazy"
+        /> -->
+        <img
+          src="./images/proxima-centauri.jpg"
+          alt="Hubble image of Proxima Centauri, the closest star to our Sun"
+          class="img-fluid rounded shadow"
+          style="width: 100%; max-width: 600px; height: auto"
+          loading="lazy"
         />
-
         <!-- <p class="small text-muted mt-2">
           Image credit: ESA/Hubble & NASA. Source:
           <a
@@ -152,7 +208,6 @@
             >esahubble.org</a
           >
         </p> -->
-
         <p class="small mt-2">
           <span class="text-muted"
             >Image credit: ESA/Hubble & NASA. Source:
@@ -164,9 +219,6 @@
             >esahubble.org</a
           >
         </p>
-
-        <br />
-        <br />
         <br />
         <h2 class="fw-bold text-body-emphasis">
           Helping You Rank Higher On Google
@@ -183,7 +235,6 @@
           Concord, Manchester and Nashua.
         </p>
         <br />
-        <br />
         <h2 class="fw-bold text-body-emphasis">
           Not sure where to start with SEO?
         </h2>
@@ -196,21 +247,26 @@
             href="https://moz.com/beginners-guide-to-seo"
             target="_blank"
             rel="noopener"
-            >Moz's Beginner’s Guide to SEO</a
+            >Moz's Beginner's Guide to SEO</a
           >
           is a great resource to help you understand what goes into building a
           strong online presence.
         </p>
         <br />
-        <br />
         <p class="lead mb-4">
           <strong>Looking to grow your local business?</strong> Our
           <a href="seo-services-new-hampshire.html">SEO services</a> are
-          tailored for New Hampshire small businesses.
+          tailored for New Hampshire small businesses. If you own a small
+          business, you may not have the time to manage SEO, or a website. At
+          Proxima Granite SEO, we can manage off-page SEO such as optimizing
+          your Google Business Profile, getting you into directories such as
+          Yelp, and reputation management. We offer personalized service, such
+          as check-ins, monthly reports that are understandable, emphasis on
+          education, in other words, the human touch which seems to be greatly
+          lacking in business today.
         </p>
       </div>
     </div>
-
     <!-- icon grid -->
     <div class="container px-4 py-5" id="icon-grid">
       <h2 class="pb-2 border-bottom"></h2>
