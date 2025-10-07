@@ -1,102 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home page with logo -->
   <url>
-    <loc>https://www.proximagranite.com</loc>
-    <lastmod>2025-10-7T21:24:08+00:00</lastmod>
+    <loc>https://www.proximagranite.com/</loc>
+    <lastmod>2025-10-07T21:24:08+00:00</lastmod>
     <priority>1.00</priority>
     <image:image>
-      <image:loc>https://www.proximagranite.com/images/proxima-granite-seo-logo.jpeg</image:loc>
+      <image:loc>https://www.proximagranite.com/images/proxima-granite-seo-logo.avif</image:loc>
       <image:title>Proxima Granite Logo</image:title>
     </image:image>
   </url>
 
-  <!-- About page -->
   <url>
     <loc>https://www.proximagranite.com/about-proxima-granite.html</loc>
-    <lastmod>2025-10-7T21:24:08+00:00</lastmod>
+    <lastmod>2025-10-07T21:24:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
-  <!-- Services page -->
   <url>
     <loc>https://www.proximagranite.com/seo-services-new-hampshire.html</loc>
-    <lastmod>2025-10-7T21:24:08+00:00</lastmod>
+    <lastmod>2025-10-07T21:24:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
-  <!-- Services anchors -->
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#website-audit-seo</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#on-page-seo</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#keyword-research</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#local-seo</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#technical-seo</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#performance-tracking</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.proximagranite.com/seo-services-new-hampshire.html#youtube-seo</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Contact page -->
   <url>
     <loc>https://www.proximagranite.com/contact-seo-nh.html</loc>
-    <lastmod>2025-10-7T21:24:08+00:00</lastmod>
+    <lastmod>2025-10-07T21:24:08+00:00</lastmod>
     <priority>0.64</priority>
   </url>
 
-  <!-- FAQ page -->
   <url>
     <loc>https://www.proximagranite.com/seo-faq-new-hampshire.html</loc>
-    <lastmod>2025-10-7T21:24:08+00:00</lastmod>
+    <lastmod>2025-10-07T21:24:08+00:00</lastmod>
     <priority>0.51</priority>
   </url>
 
-  <!-- Case study page -->
   <url>
     <loc>https://www.proximagranite.com/seo-case-study-nh.html</loc>
-    <lastmod>2025-10-7T21:24:08+00:00</lastmod>
+    <lastmod>2025-10-07T21:24:08+00:00</lastmod>
     <priority>0.70</priority>
   </url>
 
-  <!-- Privacy Policy page -->
   <url>
     <loc>https://www.proximagranite.com/privacy-policy-proxima-granite.html</loc>
-    <lastmod>2025-10-7T21:00:08+00:00</lastmod>
+    <lastmod>2025-10-07T21:00:08+00:00</lastmod>
     <priority>0.51</priority>
   </url>
 
-  <!-- Blog container -->
   <url>
     <loc>https://www.proximagranite.com/proxima-granite-seo-blog.html</loc>
-    <lastmod>2025-10-7T16:11:08+00:00</lastmod>
+    <lastmod>2025-10-07T16:11:08+00:00</lastmod>
     <priority>0.70</priority>
   </url>
 
-  <!-- Blog Page 1 -->
   <url>
     <loc>https://www.proximagranite.com/my-new-best-friend-ai-part-one.html</loc>
-    <lastmod>2025-10-7T16:11:08+00:00</lastmod>
+    <lastmod>2025-10-07T16:11:08+00:00</lastmod>
     <priority>0.70</priority>
   </url>
 
