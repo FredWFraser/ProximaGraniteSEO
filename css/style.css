@@ -261,6 +261,31 @@ footer {
   padding: 1.5rem;
   }
 
+  .soft-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb; /* A friendly blue */
+  background-color: #000000;   /* black */   
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;            /* Soft corners */
+  font-size: 1.1rem;               
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.soft-btn:hover {
+  background-color: #1e4fc3; 
+  background-color: #333333;        /* Slightly lighter on hover */
+  transform: translateY(-2px);      /* A tiny lift */
+}
+
+.soft-btn:active {
+  background-color: #444444;        /* Pressed */
+  transform: translateY(0);         /* Back down */
+}
+
+
     /* Media Queries */
 
     @media(max-width: 1250px) {
