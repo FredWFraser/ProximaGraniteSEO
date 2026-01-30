@@ -102,105 +102,119 @@
         "@graph": [
           {
             "@type": "Organization",
+            "@id": "https://www.proximagranite.com/#organization",
             "name": "Proxima Granite SEO",
             "url": "https://www.proximagranite.com",
             "logo": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
             "sameAs": [
               "https://www.facebook.com/proxima.granite.seo/",
               "https://www.linkedin.com/in/frederickwfraser/"
-            ],
-            "serviceOffered": [
-              {
-                "@type": "Service",
-                "name": "Website Audit & SEO Analysis",
-                "serviceType": "SEO Analysis",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#website-audit-seo",
-                "description": "A full diagnostic of your website's performance, structure, and search visibility. Includes site speed and mobile responsiveness testing, crawl error detection, and SEO scoring with actionable insights."
-              },
-              {
-                "@type": "Service",
-                "name": "On-Page SEO Optimization",
-                "serviceType": "On-Page SEO",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#on-page-seo",
-                "description": "Optimization of titles, meta descriptions, headings, images, and internal linking to improve search engine visibility."
-              },
-              {
-                "@type": "Service",
-                "name": "Keyword Research & Strategy",
-                "serviceType": "Keyword SEO",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#keyword-research",
-                "description": "Comprehensive keyword research and strategic planning to target high-value search terms that drive traffic and conversions."
-              },
-              {
-                "@type": "Service",
-                "name": "Local SEO Services",
-                "serviceType": "Local SEO",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#local-seo",
-                "description": "Improve visibility in Google Maps and local search results. Includes business profile optimization, citation building, and review management."
-              },
-              {
-                "@type": "Service",
-                "name": "Technical SEO",
-                "serviceType": "Technical SEO",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#technical-seo",
-                "description": "Ensuring your website is technically sound for search engines. Covers site architecture, crawlability, schema markup, and indexation."
-              },
-              {
-                "@type": "Service",
-                "name": "Performance Tracking & Reporting",
-                "serviceType": "SEO Reporting",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#performance-tracking",
-                "description": "Ongoing monitoring of SEO performance with detailed reports on rankings, traffic, conversions, and actionable insights for improvements."
-              },
-              {
-                "@type": "Service",
-                "name": "Fiverr",
-                "serviceType": "Fiverr Gigs",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#fiverr",
-                "description": "We offer four reasonably priced Fiverr gigs. Included are improve your local SEO and Google visibility, perform a professional SEO audit and website analysis, enhance your website design and SEO performance, and fix technical SEO issues and optimize your website."
-              },
-              {
-                "@type": "Service",
-                "name": "YouTube SEO",
-                "serviceType": "YouTube SEO",
-                "url": "https://www.proximagranite.com/seo-services-new-hampshire#youtube-seo",
-                "description": "Optimization of YouTube channels and videos to improve rankings, watch time, CTR, and subscriber growth. Includes channel audits, keyword optimization, thumbnail testing, and analytics setup."
-              }
             ]
           },
           {
+            "@type": "Service",
+            "@id": "https://www.proximagranite.com/seo-services-new-hampshire#seo-services",
+            "name": "SEO Services",
+            "provider": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "New Hampshire"
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Small businesses"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Proxima Granite SEO Service Offerings",
+              "itemListElement": [
+                {
+                  "@type": "Service",
+                  "name": "Website Audit & SEO Analysis",
+                  "description": "A full diagnostic of your website's performance, structure, and search visibility, including site speed, mobile responsiveness, crawl errors, and actionable SEO insights.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#website-audit-seo"
+                },
+                {
+                  "@type": "Service",
+                  "name": "On-Page SEO Optimization",
+                  "description": "Optimization of titles, meta descriptions, headings, images, and internal linking to improve organic search visibility.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#on-page-seo"
+                },
+                {
+                  "@type": "Service",
+                  "name": "Keyword Research & Strategy",
+                  "description": "Strategic keyword research to target high-value, intent-driven search terms based on competition and business goals.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#keyword-research"
+                },
+                {
+                  "@type": "Service",
+                  "name": "Local SEO Services",
+                  "description": "Local search optimization including Google Business Profile optimization, citation management, and local visibility improvements.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#local-seo"
+                },
+                {
+                  "@type": "Service",
+                  "name": "Technical SEO",
+                  "description": "Technical optimization covering site architecture, crawlability, indexation, schema markup, and performance health.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#technical-seo"
+                },
+                {
+                  "@type": "Service",
+                  "name": "Performance Tracking & Reporting",
+                  "description": "Ongoing SEO monitoring with clear reporting on rankings, traffic, conversions, and next-step recommendations.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#performance-tracking"
+                },
+                {
+                  "@type": "Service",
+                  "name": "YouTube SEO",
+                  "description": "Optimization of YouTube channels and videos to improve rankings, watch time, CTR, and subscriber growth.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#youtube-seo"
+                },
+                {
+                  "@type": "Service",
+                  "name": "SEO Services via Fiverr",
+                  "description": "Select SEO services delivered through Fiverr, including audits, local SEO improvements, technical fixes, and website optimization.",
+                  "url": "https://www.proximagranite.com/seo-services-new-hampshire#fiverr"
+                }
+              ]
+            }
+          },
+          {
             "@type": "FAQPage",
+            "@id": "https://www.proximagranite.com/seo-services-new-hampshire#faq",
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "What services do you offer?",
+                "name": "What SEO services do you offer?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We offer Website Audit & SEO Analysis, On-Page SEO Optimization, Keyword Research & Strategy, Local SEO Services, Technical SEO, Performance Tracking & Reporting, and YouTube SEO."
+                  "text": "We offer SEO audits, on-page optimization, keyword research, local SEO, technical SEO, performance tracking, and YouTube SEO services."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Do I need all of these SEO services?",
+                "name": "Do I need all SEO services at once?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Not necessarily. Each business has unique needs. We can recommend the most relevant services based on your goals and current website performance."
+                  "text": "No. Services are selected based on your business goals, budget, and current website performance."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How do I get started?",
+                "name": "Who are your SEO services for?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can contact us via our website to schedule a consultation. We'll review your website and business goals, then provide a tailored SEO plan."
+                  "text": "Our SEO services are designed for small businesses in New Hampshire seeking better visibility, traffic, and local search performance."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can you handle YouTube SEO for my channel?",
+                "name": "Do you offer YouTube SEO?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. We optimize YouTube channels and videos to improve rankings, watch time, CTR, and subscriber growth. We also provide analytics tracking and content recommendations."
+                  "text": "Yes. We optimize YouTube channels and videos to improve search visibility, engagement, and subscriber growth."
                 }
               }
             ]
@@ -240,6 +254,14 @@
         SEO Services — Proxima Granite SEO
       </h1>
 
+      <br />
+
+      <p class="lead mb-4">
+        Proxima Granite SEO provides practical SEO services for small businesses
+        in New Hampshire, with a focus on local search visibility, technical
+        SEO, and sustainable Google rankings. The services below reflect our
+        core SEO offerings, with optional add-ons available as needed.
+      </p>
       <br />
       <br />
 
@@ -340,8 +362,11 @@
       <br />
 
       <div class="mb-5">
-        <h2 class="h3">🛠️ Fiverr Services</h2>
-        <p>We offer four reasonably priced Fiverr gigs.</p>
+        <h2 class="h3">🛠️ Fiverr Services Options</h2>
+        <p>
+          For clients who prefer a fixed-scope, marketplace-based option, we
+          also offer select SEO services through Fiverr.
+        </p>
         <ul class="list-unstyled">
           <li>
             <a
@@ -427,6 +452,11 @@
           <p class="service-blurb">
             Optimize your channel and videos to rank in YouTube & Google, boost
             watch time, and grow subscribers.
+            <br />
+            <strong
+              >This service is ideal for businesses and creators using video as
+              part of their broader SEO strategy.</strong
+            >
           </p>
 
           <ul class="service-highlights">
@@ -468,10 +498,12 @@
             SEO-friendly structure built with performance and usability in mind
           </li>
         </ul>
-        <p>
-          Learn more
-          <a href="about-proxima-granite.html">about our business</a> and why
-          Proxima Granite SEO can be trusted.
+        <br />
+
+        <p class="lead mb-4">
+          Not sure which service fits your situation?
+          <a href="contact-seo-nh.html">Contact us</a> and we’ll point you in
+          the right direction.
         </p>
       </div>
     </section>

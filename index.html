@@ -94,6 +94,9 @@
         "@graph": [
           {
             "@type": "Organization",
+            "founder": {
+              "@id": "https://www.proximagranite.com/#fred-fraser"
+            },
             "@id": "https://www.proximagranite.com/#organization",
             "url": "https://www.proximagranite.com",
             "name": "Proxima Granite SEO",
@@ -109,8 +112,8 @@
             ]
           },
           {
-            "@type": "LocalBusiness",
-            "@id": "https://www.proximagranite.com/#localbusiness",
+            "@type": "ProfessionalService",
+            "@id": "https://www.proximagranite.com/#professionalservice",
             "name": "Proxima Granite SEO",
             "url": "https://www.proximagranite.com",
             "image": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
@@ -124,7 +127,10 @@
               "postalCode": "03865",
               "addressCountry": "US"
             },
-            "areaServed": "New Hampshire",
+            "areaServed": {
+              "@type": "State",
+              "name": "New Hampshire"
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5",
@@ -170,7 +176,7 @@
             "@type": "Person",
             "@id": "https://www.proximagranite.com/#fred-fraser",
             "name": "Fred Fraser",
-            "image": "https://www.proximagranite.com/images/fred-fraser-proxima-granite-seo.jpg",
+            "image": "https://www.proximagranite.com/images/fred-fraser-proxima-granite-seo-400.avif",
             "jobTitle": "Founder and SEO Specialist",
             "worksFor": {
               "@id": "https://www.proximagranite.com/#organization"
@@ -178,6 +184,18 @@
             "alumniOf": "Franklin Pierce University",
             "description": "Fred Fraser is the founder of Proxima Granite SEO, a local SEO company helping small businesses in New Hampshire improve their online visibility.",
             "url": "https://www.proximagranite.com"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.proximagranite.com/#website",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "publisher": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.proximagranite.com/#professionalservice"
+            }
           }
         ]
       }
@@ -203,7 +221,7 @@
     <div id="header"></div>
 
     <!-- hero with image -->
-    <div class="px-4 py-3 my-5 text-center">
+    <div class="px-4 py-3 my-2 text-center">
       <a
         href="about-proxima-granite.html"
         title="Click here to learn all about us"
@@ -237,6 +255,11 @@
           our <a href="seo-services-new-hampshire.html">SEO services</a>.
           <br />
           <br />
+          Proxima Granite SEO is a New Hampshire-based SEO consulting company
+          that helps small businesses improve Google rankings and local
+          visibility through practical, transparent search engine optimization.
+          <br />
+          <br />
           We are a New Hampshire SEO company specializing in
           <strong>search optimization first,</strong> supported by fast,
           Google-friendly website development when needed — all designed to
@@ -250,11 +273,28 @@
           count on.
         </p>
         <br />
+
+        <div class="lead mb-4 text-center">
+          <p class="mb-2 fw-semibold">Core services include:</p>
+
+          <ul class="service-list d-inline-block text-start">
+            <li>Local SEO for New Hampshire small businesses</li>
+            <li>On-page and technical SEO</li>
+            <li>Google Business Profile optimization</li>
+            <li>SEO-focused website development</li>
+          </ul>
+        </div>
+
         <!-- Proxima Pulse Launch Video -->
         <section class="container my-5 text-center">
           <h2 class="fw-bold text-body-emphasis mb-4">
             See how our SEO-first approach works in practice
           </h2>
+          <p class="lead mb-4">
+            In addition to our core SEO services, we also develop internal tools
+            to support our optimization work.
+          </p>
+          <br />
           <p class="lead mb-4">
             Proxima Pulse is more than just a new tool — it represents the next
             evolution of Proxima Granite SEO.
@@ -352,6 +392,14 @@
             </div>
           </div>
         </section>
+
+        <p class="lead mb-4">
+          Proxima Granite SEO is run by <strong>Fred Fraser,</strong> an SEO
+          consultant with a background in software quality assurance, bringing a
+          technical, detail-driven approach to search optimization for small
+          businesses.
+        </p>
+        <br />
 
         <br />
         <h2 class="fw-bold text-body-emphasis">Etymology of Our Name</h2>
