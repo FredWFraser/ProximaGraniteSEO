@@ -311,6 +311,23 @@ footer {
     height: auto;
   }
 
+  .service-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  }
+
+  /* YouTube SEO – centered, bulletless, tight list */
+  #youtube-seo .service-highlights {
+    list-style: none;          /* no bullets */
+    padding-left: 0;           /* remove indent */
+    margin: 1rem auto 0 auto;  /* center block */
+    max-width: 520px;
+    text-align: center;        /* center text */
+  }
+
+  #youtube-seo .service-highlights li {
+    margin: 0;                 /* no spacing between items */
+  }
 
     /* Media Queries */
 
