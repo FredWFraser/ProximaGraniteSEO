@@ -195,9 +195,25 @@
 
             <!-- contact form -->
 
+            <div
+              id="thank-you-message"
+              style="display: none; text-align: center; margin-top: 1rem"
+            >
+              <h3>Thank you for your request!</h3>
+              <p>
+                I've received your homepage review request. You'll get your
+                short summary within 2-3 business days via email. This review
+                covers your homepage only.
+              </p>
+            </div>
+
             <div class="contact-form">
               <h2>Contact Me</h2>
-              <form action="https://formspree.io/f/myzdyygl" method="POST">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/myzdyygl"
+                method="POST"
+              >
                 <label for="name">Name:</label>
                 <input
                   type="text"
@@ -282,6 +298,33 @@
     </div>
 
     <div id="footer"></div>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const thankYou = document.getElementById("thank-you-message");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // stop default form submission
+        const formData = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { Accept: "application/json" },
+        })
+          .then((response) => {
+            if (response.ok) {
+              form.style.display = "none"; // hide form
+              thankYou.style.display = "block"; // show thank-you
+              form.reset();
+            } else {
+              alert("Oops! There was a problem submitting your form.");
+            }
+          })
+          .catch((error) => {
+            alert("Oops! There was a problem submitting your form.");
+          });
+      });
+    </script>
 
     <!-- Your include.js script -->
     <script src="js/include.js" defer></script>
