@@ -5,8 +5,29 @@ body {
     background: -webkit-linear-gradient(to right, #f5f7fa, #c3cfe2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-top: 70px; /* Adjust to match your header's height */
-
+    position: relative;
+    z-index: 0; /* Ensure the body is above the grid overlay */
   }
+  /* Tech grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+
+  background-size: 70px 70px;
+
+  pointer-events: none;
+  z-index: -1; /* Ensure the grid is behind all content */
+}
+
 header {
     background: #00416A; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
@@ -330,6 +351,37 @@ footer {
     margin: 0;                 /* no spacing between items */
   }
 
+  @font-face {
+  font-family: 'Exo2';
+  src: url('/fonts/Exo2.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+  }
+
+  @font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('/fonts/SpaceGrotesk.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+  }
+
+  body {
+  font-family: 'SpaceGrotesk', Arial, sans-serif;
+  line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+  font-family: 'Exo2', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  }
+
+  strong {
+    font-weight: 600;
+  }
+  
     /* Media Queries */
 
     @media(max-width: 1250px) {
