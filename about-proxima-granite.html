@@ -5,6 +5,9 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
+    <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -188,6 +191,7 @@
     <div id="header"></div>
 
     <!-- Your main page content -->
+    <main>
     <!-- hero with image -->
     <!-- <div class="px-4 py-4 mt-0 mb-3 text-center"> -->
     <div class="px-4 py-3 py-md-4 mt-0 mb-3 text-center">
@@ -213,7 +217,7 @@
           height="400"
           alt="Professional photo of Fred Fraser, founder of Proxima Granite SEO"
           title="Image of Proxima Granite SEO Founder Fred Fraser"
-          loading="lazy"
+          fetchpriority="high"
         />
         <figcaption>
           Fred Fraser, founder of Proxima Granite SEO, helping New Hampshire
@@ -289,6 +293,7 @@
         </p>
       </div>
     </div>
+    </main>
 
     <div id="footer"></div>
 
