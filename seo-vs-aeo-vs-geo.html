@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Preconnects first -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-5ZXN8L90BZ");
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
+
+    <!-- Optional preloads (only if fetched via JS) -->
+    <link rel="preload" href="./header.html" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="./footer.html" as="fetch" crossorigin="anonymous" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Local SEO NH Consultant | Proxima Granite SEO</title>
+    <meta name="description"
+        content="Proxima Granite SEO helps New Hampshire small businesses grow through expert SEO and local search strategies. Get found online and boost your visibility today." />
+    <link rel="canonical" href="https://www.proximagranite.com" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:title" content="Get Found Online with Local SEO in NH | Proxima Granite SEO" />
+    <meta property="og:description"
+        content="Proxima Granite SEO helps New Hampshire small businesses grow with expert SEO and local search strategies. Get found online and boost visibility today." />
+    <meta property="og:image" content="https://www.proximagranite.com/images/logo_hi_res_630_by_630.webp" />
+    <meta property="og:url" content="https://www.proximagranite.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Get Found Online with Local SEO in NH | Proxima Granite SEO" />
+    <meta name="twitter:description"
+        content="Grow your visibility with expert local SEO for NH small businesses. Get found online with Proxima Granite SEO." />
+    <meta name="twitter:image" content="https://www.proximagranite.com/images/logo-highres-twitter.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "founder": {
+              "@id": "https://www.proximagranite.com/#fred-fraser"
+            },
+            "@id": "https://www.proximagranite.com/#organization",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+              "width": 200,
+              "height": 200
+            },
+            "sameAs": [
+              "https://www.facebook.com/proxima.granite.seo/",
+              "https://www.linkedin.com/in/frederickwfraser/"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://www.proximagranite.com/#professionalservice",
+            "name": "Proxima Granite SEO",
+            "url": "https://www.proximagranite.com",
+            "image": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+            "description": "Proxima Granite SEO provides expert local SEO services for small businesses in New Hampshire.",
+            "telephone": "+1-978-308-9232",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "28 Chandler Avenue",
+              "addressLocality": "Plaistow",
+              "addressRegion": "NH",
+              "postalCode": "03865",
+              "addressCountry": "US"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "New Hampshire"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "2"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Vani S."
+                },
+                "reviewBody": "I hired this company for SEO implementation, and I couldn't be happier with the results. Fred was professional and transparent. He clearly explained what changes he would be making and why those changes mattered. I especially appreciated the daily updates, which kept me informed and confident throughout the process. Highly recommend!",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "V P Holmes"
+                },
+                "reviewBody": "Customer service was very helpful in explaining the services offered. An audit was conducted which fully assessed the need of services. Daily updates were provided as the work progressed and a final report issued upon completion. Extremely professional and highly recommended.",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/proxima.granite.seo/",
+              "https://www.linkedin.com/in/frederickwfraser/"
+            ],
+            "parentOrganization": {
+              "@id": "https://www.proximagranite.com/#organization"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.proximagranite.com/#fred-fraser",
+            "name": "Fred Fraser",
+            "image": "https://www.proximagranite.com/images/fred-fraser-proxima-granite-seo-400.avif",
+            "jobTitle": "Founder and SEO Specialist",
+            "worksFor": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "alumniOf": "Franklin Pierce University",
+            "description": "Fred Fraser is the founder of Proxima Granite SEO, a local SEO company helping small businesses in New Hampshire improve their online visibility.",
+            "url": "https://www.proximagranite.com"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.proximagranite.com/#website",
+            "url": "https://www.proximagranite.com",
+            "name": "Proxima Granite SEO",
+            "publisher": {
+              "@id": "https://www.proximagranite.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://www.proximagranite.com/#professionalservice"
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.proximagranite.com/"
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header"></div>
+    <main>
+        <!-- hero with image -->
+        <div class="px-4 py-5 my-2 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">
+                SEO, AEO, and GEO: How AI Is Changing Search
+            </h1>
+            <br />
+            <br />
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    Things are always changing. I would like to think for the better. We don't ride around in horse and
+                    buggies anymore, though people were averse to changing over to the automobile. Change is always
+                    hard, even if it's for a better quality of life. Though change is inevitable. Necessity is indeed
+                    the mother of invention. I want to take a close look at how search is changing online.
+                    <br />
+                    <br />
+                </p>
+                <p class="lead mb-4">
+                    There are a lot of terms floating around these days in the world of search. Hopefully by now all of
+                    us are familiar with SEO. If not, you are in the right place as I compare SEO vs AEO vs GEO and
+                    breakdown what all of this means. If you're curious about my background and why I focus on modern search strategies, you can learn more <a href="about-proxima-granite.html">about me</a>.
+                </p>
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis mb-4">
+                    Quick Definitions
+                </h2>
+
+                <div class="lead mb-4 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li><strong>SEO (Search Engine Optimization):</strong> optimizing a website to rank in search
+                            engines like Google</li>
+                        <li><strong>AEO (Answer Engine Optimization):</strong> structuring content so AI systems can
+                            extract direct answers</li>
+                        <li><strong>GEO (Generative Engine Optimization):</strong> optimizing content so generative AI
+                            tools cite your website</li>
+                    </ul>
+                </div>
+
+                <!-- SEO/AEO/GEO Comparison Table with Subtle Shadow -->
+                <div id="seo-table-container">
+                    <style>
+                        /* Reset all Bootstrap table styles for this container */
+                        #seo-table-container table,
+                        #seo-table-container th,
+                        #seo-table-container td {
+                            all: unset;
+                            display: table-cell;
+                            box-sizing: border-box;
+                        }
+
+                        #seo-table-container table {
+                            all: unset;
+                            display: table;
+                            width: 100%;
+                            border-collapse: collapse;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 1.1rem;
+                            margin: 20px 0;
+                            background: rgba(255, 255, 255, 0.9);
+                            /* semi-transparent body */
+                            border-radius: 8px;
+                            overflow: hidden;
+                            border: 1px solid rgba(200, 200, 200, 0.7);
+                            /* subtle border */
+                            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                            /* subtle drop shadow */
+                        }
+
+                        #seo-table-container caption {
+                            caption-side: top;
+                            font-weight: bold;
+                            font-size: 1.25rem;
+                            text-align: left;
+                            margin-bottom: 10px;
+                            color: #000;
+                            /* black caption text */
+                        }
+
+                        #seo-table-container th,
+                        #seo-table-container td {
+                            border: 1px solid #ccc;
+                            padding: 12px 15px;
+                            text-align: left;
+                            vertical-align: middle;
+                        }
+
+                        /* Header row opaque to stand out on grid */
+                        #seo-table-container th {
+                            background-color: #f5f5f5;
+                            /* fully opaque */
+                            font-weight: bold;
+                        }
+
+                        /* Zebra stripes with semi-transparent background for body rows */
+                        #seo-table-container tr:nth-child(even) td {
+                            background-color: rgba(250, 250, 250, 0.9);
+                        }
+
+                        /* Bold main keywords */
+                        #seo-table-container td span.keyword {
+                            font-weight: bold;
+                        }
+
+                        /* Responsive horizontal scroll on mobile */
+                        @media (max-width: 768px) {
+                            #seo-table-container {
+                                overflow-x: auto;
+                            }
+
+                            #seo-table-container th,
+                            #seo-table-container td {
+                                padding: 10px;
+                                font-size: 1rem;
+                            }
+                        }
+                    </style>
+
+                    <table>
+                        <caption>Comparison of SEO, AEO, and GEO</caption>
+                        <thead>
+                            <tr>
+                                <th>Optimization</th>
+                                <th>Focus</th>
+                                <th>Goal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="keyword">SEO</span></td>
+                                <td>Search engines</td>
+                                <td>Rank pages in search results</td>
+                            </tr>
+                            <tr>
+                                <td><span class="keyword">AEO</span></td>
+                                <td>Answer engines / AI-powered search</td>
+                                <td>Provide direct answers to user queries</td>
+                            </tr>
+                            <tr>
+                                <td><span class="keyword">GEO</span></td>
+                                <td>Generative AI systems</td>
+                                <td>Be cited in AI-generated responses and build authority</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <br />
+
+
+                <img class="d-block mx-auto mb-4" src="./images/seo-aeo-geo-evolution-diagram.avif"
+                    alt="Evolution of SEO, AEO, and GEO" width="300" height="518" fetchpriority="high" />
+
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">What is SEO?</h2>
+                <br />
+                <p class="lead mb-4">
+                    SEO, or search engine optimization, is the practice of improving a website to increase its
+                    visibility in organic (non-paid) search engine results, such as on Google. By optimizing content,
+                    technical structure, and building authority, SEO helps websites rank higher, driving more targeted
+                    traffic and improving user experience.
+                    <br />
+                    <br />
+                    Key components of SEO include:
+                </p>
+                <div class="lead mb-4 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li><strong>On-Page SEO: </strong>Optimizing individual pages with relevant keywords, content,
+                            and meta tags.</li>
+                        <li><strong>Off-Page SEO: </strong>Building credibility and authority through backlinks from
+                            other websites.</li>
+                        <li><strong>Technical SEO: </strong>Enhancing website performance, such as speed, crawlability,
+                            and mobile-friendliness, to help engines index the site.</li>
+                    </ul>
+                </div>
+
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">What is AEO?</h2>
+                <br />
+                <p class="lead mb-4">
+                    Answer Engine Optimization (AEO) is the process of structuring website content to be directly cited,
+                    summarized, or spoken by AI-powered search tools (like ChatGPT, Gemini, Perplexity, and Google AI
+                    Overviews). Unlike traditional SEO, which focuses on ranking links, AEO optimizes for concise,
+                    direct, and authoritative answers to user queries, including voice search.
+                    <br />
+                    <br />
+                    Key components of AEO include:
+                </p>
+                <div class="lead mb-4 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li><strong>Focus on Q&A: </strong>Content is structured to answer specific "who, what, why, how"
+                            questions directly.</li>
+                        <li><strong>Structured Data: </strong>Utilizing schema markup to help AI understand and process
+                            content.</li>
+                        <li><strong>High-Quality Content: </strong>Emphasizing accuracy, E-E-A-T (Experience, Expertise,
+                            Authoritativeness, Trustworthiness), and clear, concise, and structured information.</li>
+                        <li><strong>Voice Search Readiness: </strong>Ensuring content is easily read by virtual
+                            assistants such as Alexa or Siri.</li>
+                        <li><strong>Zero-Click Results: </strong>The goal is to appear in the immediate answer box,
+                            rather than just in the list of links below it.</li>
+                    </ul>
+                </div>
+
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">What is GEO?</h2>
+                <br />
+                <p class="lead mb-4">
+                    Generative Engine Optimization (GEO) is the next evolution of SEO designed for the AI age, focusing
+                    on optimizing content to get cited by AI-powered search tools like ChatGPT, Gemini, and Google's AI
+                    Overview. Unlike traditional SEO that aims for top links, GEO maximizes visibility within
+                    AI-generated responses to build brand trust, credibility, and authority.
+                    <br />
+                    <br />
+                    Key components of GEO include:
+                </p>
+                <div class="lead mb-4 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li><strong>Purpose: </strong>To make content discoverable and authoritative enough to be cited
+                            by LLMs (Large Language Models).</li>
+                        <li><strong>Tactics: </strong>Similar to SEO, it requires creating high-quality, relevant
+                            content, but with added focus on answering specific user intent and, crucially, technical
+                            accessibility for AI crawlers.</li>
+                        <li><strong>Metrics: </strong>Moves beyond clicks to track "share of voice" or "share of model"
+                            (brand mentions) across platforms like Perplexity, Gemini, and Claude.</li>
+                        <li><strong>Connection to SEO: </strong>Effective GEO often stems from strong, foundational SEO,
+                            making them complementary strategies.</li>
+                    </ul>
+                </div>
+                <br />
+                <br />
+
+                <h2 class="fw-bold text-body-emphasis">
+                    Why This Matters Now
+                </h2>
+                <br />
+                <p class="lead mb-4">
+                    Have you noticed something in Google when you type in your search results? In the not-so-distant
+                    past, you got your Search Engine Results Page, with all of the blue links. You did your research by
+                    clicking on different links, thinking of comparisons and coming to your conclusion. Now, you get AI
+                    results at the top, followed by the so-called “three-pack” of recommendations, a map, sponsored
+                    (paid for) results, and below the fold, alas you get your old-school search engine results with the
+                    distinctive blue links. Increasingly, searchers are stopping above the fold (the “fold” is the point
+                    where you have to start scrolling, hence the phrases “above the fold” and “below the fold”). The
+                    decisions are being made for you, though you will go on to click, if you are searching for a
+                    business or a product. Nowadays, for information only, users will stop above the fold, see what they
+                    are looking for, and carry on. This is the “no click” concept.
+                    <br />
+                    <br />
+                    As a business, you want to be above the fold. You want to be the one cited by AI, you want to be the
+                    “expert”, or “authority” in whatever you do. Else, you will just be lost in the ether. Your business
+                    website more than ever needs to be optimized for humans, Google, and AI. A search for “best plumber
+                    near me” in Google now shows AI summaries, local map results, and sponsored listings before organic
+                    links.
+                </p>
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">
+                    How AI Finds Your Website
+                </h2>
+                <br />
+                <p class="lead mb-4">
+                    AI systems perform best when information is stated clearly and directly. In other words, AI loves
+                    explicit language. Who, what, when, why, how. You're a plumber? What's your name? Where's your
+                    business located? Who do you serve? What areas do you serve? Who are you? Why do you do what you do?
+                    Tell me about you.
+                    <br />
+                    <br />
+                    AI loves graphs, tables, bulleted items, all kinds of logical representations.
+                    <br />
+                    <br />
+                    AI systems prefer pages that have:
+                </p>
+
+                <div class="lead mb-4 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li>Clear headings</li>
+                        <li>Concise explanations</li>
+                        <li>Lists and bullet points</li>
+                        <li>Structured data / schema</li>
+                        <li>Fast page load times</li>
+                        <li>Authoritative expertise</li>
+                    </ul>
+                </div>
+                <br />
+                <br />
+
+                <h2 class="fw-bold text-body-emphasis">
+                    SEO Is Not Dead
+                </h2>
+                <br />
+                <p class="lead mb-4">
+                    SEO is not going anywhere. SEO is the foundation of the search system. It is expanding. AI systems
+                    rely heavily on search indexes. Traditional SEO is the foundation of AEO/GEO. Search engines such as
+                    Google and Bing still rely heavily on these foundations. What SEO does NOT mean today are things
+                    like keyword stuffing and spam backlinks. This was the SEO of yesteryear. The rules have changed and
+                    you can be penalized if you are caught doing these things.
+                    <br />
+                    <br />
+                    Businesses that want to compete today need modern search strategies that include SEO, AEO, and GEO. If you want to know how this applies to your business, take a look at the <a href="seo-services-new-hampshire.html">SEO services</a> I offer for small businesses in New Hampshire.
+                </p>
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">
+                    How to Optimize for AI Search
+                </h2>
+                <br />
+                <p class="lead mb-4">
+                    So what is the answer? How do you optimize your website for AI search?
+                </p>
+                <div class="lead mb-4 text-center">
+                    <ol class="service-list d-inline-block text-start">
+                        <li>Use clear question-style headings</li>
+                        <li>Provide concise answers. Remember AI loves clarity.</li>
+                        <li>Add schema markup. This is not visible to human viewers.</li>
+                        <li>Include authoritative expertise. You want to be that one, or in the two or three, that AI
+                            cites.</li>
+                        <li>Structure content for skimming.</li>
+                        <li>Build trusted backlinks. Remember no spammy backlinks, or links to nowhere.</li>
+                    </ol>
+                </div>
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">
+                    The Future of Search
+                </h2>
+                <br />
+                <p class="lead mb-4">
+                    The future of search is here. Content has to be readable and enjoyable for humans. Humans need to be
+                    moved, either by emotion or simply necessity, to purchase something from your website, no matter
+                    what it may be. Google needs trust signals. Is your site structurally sound? Is is fast? Do you have
+                    “thin” content, or is your content rich with information? AI needs clarity. Who are you? What are
+                    you about? The infrastructure looks like this. It starts with the website, on the Internet, also
+                    known as the World Wide Web (remember that?). The website will always be the foundation of search,
+                    now and into the foreseeable future. With no website, with no good, sound development and no SEO,
+                    there is no Google indexing. Without indexing, there is nothing for AI to draw from. The whole
+                    system collapses.
+                    <br />
+                    <br />
+                    Where do you stand with SEO/AEO/GEO? How does Google, or AI see your business website? As important,
+                    how do humans see your website? Perhaps you don't have a website, therefore no online presence at
+                    all, or you have an underperforming website, not optimized for SEO. Forget about AEO and GEO. Don't
+                    be like an astronaut whose tether was broken, floating off into space. Be aware of the here and now
+                    of search, with an eye toward the future.
+                    <br />
+                    <br />
+                    <strong>Is SEO still important in the age of AI?</strong> SEO is and will continue to serve a critical function as it
+                    is the firm foundation of all search. Structure, speed, quality backlinks and schema all still
+                    matter.
+                    <br />
+                    <br />
+                    <strong>What is the difference between AEO and GEO?</strong> AEO is you are the answer from AI in a snippet, GEO
+                    means you are one of many cited by AI (usually a group of 2-3).
+                    <br />
+                    <br />
+                    <strong>Can AI replace traditional search?</strong> Yes and it very well may be the direction we are moving in. It is
+                    already replacing the more traditional search as seekers are turning to AI chatbots for answers
+                    rather than scouring through the links on the search engine result page.
+                    <br />
+                    <br />
+                    <strong>How do I optimize my website for AI search?</strong> AI loves tables, graphs, bullet points, FAQ sections.
+                    Clear, concise statements and not rambling. Have a good SEO foundation. It all begins with a good,
+                    high performing website with good SEO. Make sure content is rich and authoritative, you are the
+                    expert in your field. Answer the questions such as who, what, when, why, how.
+                </p>
+                <br />
+                <br />
+                <h2 class="fw-bold text-body-emphasis">
+                    Where Do We Go From Here
+                </h2>
+                <br />
+                <p class="lead mb-4">
+                    You're wondering, if all of this is the here and now, where will we be 5 years from now? Perhaps it will be AI making the decision for us. “Tell me who the best plumber is in all of Rockingham County New Hampshire”. ABC Plumbing. Siri call ABC Plumbing. You get a name. No clicks. 
+                    <br />
+                    <br />
+                    But there is still a source. <a href="seo-services-new-hampshire.html">Local SEO optimization</a> will be paramount. And all of it will start with a website.
+                    <br />
+                    <br />
+                    Not sure where you stand with SEO, or AEO, or GEO? Business websites need strong SEO foundations, structured content and AI-friendly formatting. If you want to know how your site performs for modern search, <a href="contact-seo-nh.html">contact me</a> for a free, no-obligation home page review.
+                    <br />
+                    <br />
+                    <em>This article was written by myself, Fred Fraser, owner/operator of Proxima Granite SEO, in my own voice, with definitions from ChatGPT and Google.</em>
+                    <br />
+                    <br />
+                </p>
+            </div>
+        </div>
+        <!-- end of hero section-->
+    </main>
+
+    <!--footer -->
+    <div id="footer"></div>
+    <script src="js/include.js" defer></script>
+    <!-- <script
+      src="//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"
+      async
+    ></script> -->
+
+    <!-- Floating Chat Button -->
+    <style>
+        #chat-trigger {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #344973;
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+    </style>
+
+    <button id="chat-trigger">💬 Chat with us</button>
+
+    <script>
+        document
+            .getElementById("chat-trigger")
+            .addEventListener("click", function () {
+                if (window.tidioChatApi) {
+                    window.tidioChatApi.open();
+                    return;
+                }
+
+                var tidioScript = document.createElement("script");
+                tidioScript.src =
+                    "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
+                tidioScript.async = true;
+                document.body.appendChild(tidioScript);
+
+                this.style.display = "none"; // optional: hide button after loading
+            });
+    </script>
+    <!-- end new chat button code -->
+</body>
+
+</html>
