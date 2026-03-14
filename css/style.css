@@ -439,6 +439,10 @@ ol.service-list {
   }
 }
 
+main {
+  padding-top: 80px;
+}
+
 
 /* Media Queries */
 
@@ -469,5 +473,11 @@ ol.service-list {
   .card-text {
     font-size: 1.05rem;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 120px;
   }
 }
