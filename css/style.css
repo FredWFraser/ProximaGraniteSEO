@@ -440,7 +440,7 @@ ol.service-list {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 160px; /* tall enough for 3-line header on small phones */
 }
 
 
@@ -476,8 +476,9 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+/* Optional: smaller padding for desktop */
+@media (min-width: 769px) {
   main {
-    padding-top: 120px;
+    padding-top: 80px; /* desktop header height */
   }
 }
