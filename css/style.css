@@ -1,14 +1,20 @@
 body {
-    margin: 0;
-    height: 100vh;
-    background: #c3cfe2; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f5f7fa, #c3cfe2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding-top: 70px; /* Adjust to match your header's height */
-    position: relative;
-    z-index: 0; /* Ensure the body is above the grid overlay */
-  }
-  /* Tech grid overlay */
+  margin: 0;
+  height: 100vh;
+  background: #c3cfe2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5f7fa, #c3cfe2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 70px;
+  /* Adjust to match your header's height */
+  position: relative;
+  z-index: 0;
+  /* Ensure the body is above the grid overlay */
+}
+
+/* Tech grid overlay */
 body::before {
   content: "";
   position: fixed;
@@ -19,33 +25,41 @@ body::before {
   mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
 
   background-image:
-    linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
 
   background-size: 70px 70px;
 
   pointer-events: none;
-  z-index: -1; /* Ensure the grid is behind all content */
+  z-index: -1;
+  /* Ensure the grid is behind all content */
 }
 
 header {
-    background: #00416A; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E4E5E6, #00416A);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle depth */
-    padding: 0.5rem 1rem;
+  background: #00416A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E4E5E6, #00416A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* subtle depth */
+  padding: 0.5rem 1rem;
 }
 
 footer {
-    background: #00416A; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E4E5E6, #00416A);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00416A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E4E5E6, #00416A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Make all nav links black */
@@ -57,80 +71,84 @@ footer {
 .nav-pills .nav-link.active {
   background-color: transparent !important;
   color: black !important;
-  font-weight: bold; /* Optional: make it stand out a bit */
+  font-weight: bold;
+  /* Optional: make it stand out a bit */
 }
 
 /* Basic styling for the form container */
-    .contact-form {
-      max-width: 500px;
-      margin: 0 auto;
-      font-family: sans-serif;
-    }
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
 
-    /* Style for the labels */
-    .contact-form label {
-      display: block;
-      margin-top: 15px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+/* Style for the labels */
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-    /* Style for text inputs and the textarea */
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form input[type="url"],
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box; /* Important for padding and width to work together */
-    }
+/* Style for text inputs and the textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="url"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Important for padding and width to work together */
+}
 
-    /* Specifically control the height of the message box */
-    .contact-form textarea {
-      height: 120px; /* You can adjust this value */
-      resize: vertical; /* Allows user to resize it vertically */
-    }
+/* Specifically control the height of the message box */
+.contact-form textarea {
+  height: 120px;
+  /* You can adjust this value */
+  resize: vertical;
+  /* Allows user to resize it vertically */
+}
 
-    /* Style for the submit button */
-    .contact-form button {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      margin-top: 20px;
-      background-color: black;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+/* Style for the submit button */
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-    .contact-form button:hover {
-      background-color: #00416A;    
-    }
+.contact-form button:hover {
+  background-color: #00416A;
+}
 
-    /* styling for blog page */
+/* styling for blog page */
 
-    .blog-body {
-      margin: 0px;
-      padding: 0px;
-      font-family: sans-serif;
-      /* font-family: 'Poppins', sans-serif; */
-      box-sizing: border-box;
-      padding-top: 70px;
-    }
+.blog-body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  box-sizing: border-box;
+  padding-top: 70px;
+}
 
-    a {
-      text-decoration: none;
-    }
+a {
+  text-decoration: none;
+}
 
-    ul {
-      list-style: none;
-    }
+ul {
+  list-style: none;
+}
 
-   /* #blog{
+/* #blog{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -153,7 +171,7 @@ footer {
       border: 1px solid #ececec;
       margin: 20px;
     } */
-    
+
 /* Ensure the outer container spans full width */
 #blog {
   display: flex;
@@ -161,7 +179,7 @@ footer {
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   width: 100%;
 }
 
@@ -172,7 +190,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto; /* This centers it horizontally */
+  margin: 0 auto;
+  /* This centers it horizontally */
   width: 100%;
 }
 
@@ -182,9 +201,9 @@ footer {
   background-color: #ffffff;
   border: 1px solid #ececec;
   margin: 20px;
-} 
+}
 
-   /* .blog-img {
+/* .blog-img {
       width: 100%;
       height: auto;
       object-fit: cover;
@@ -203,50 +222,55 @@ footer {
 
 .blog-img {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Use your image's aspect ratio */
+  aspect-ratio: 1 / 1;
+  /* Use your image's aspect ratio */
   display: block;
   position: relative;
 }
 
 .blog-img img {
   width: 100%;
-  height: 100%; /* Ensure image fills the container */
-  object-fit: cover; /* Crop the image to cover the container */
-  object-position: center; /* Center the image */
+  height: 100%;
+  /* Ensure image fills the container */
+  object-fit: cover;
+  /* Crop the image to cover the container */
+  object-position: center;
+  /* Center the image */
   display: block;
 }
 
 
-    .blog-text {
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-    }
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
-    .blog-text span {
-      font-size: 0.9rem;
-    }
+.blog-text span {
+  font-size: 0.9rem;
+}
 
-    .blog-text .blog-title {
-      font-size: 1.3rem;
-      font-weight: 500;
-      color: #272727;
-    }
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
 
-    .page-title {
-      font-size: 2rem;
-      font-weight: 750;
-      color: #272727;
-    }
+.page-title {
+  font-size: 2rem;
+  font-weight: 750;
+  color: #272727;
+}
 
- .blog-text p {
+.blog-text p {
   font-size: 0.9rem;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: box;
   -webkit-line-clamp: 3;
-  line-clamp: 3; /* future-proof */
+  line-clamp: 3;
+  /* future-proof */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -261,167 +285,189 @@ footer {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
 
-    .blog-text a {
-      color: #0f0f0f;
-    }
+.blog-text a {
+  color: #0f0f0f;
+}
 
-    .blog-text a:hover {
-      color: grey;
-      transition: all ease 0.3s;
-    }
+.blog-text a:hover {
+  color: grey;
+  transition: all ease 0.3s;
+}
 
-    .card {
+.card {
   border-radius: 1rem;
-  }
+}
 
 .card-body {
   padding: 1.5rem;
-  }
+}
 
-  .soft-btn {
+.soft-btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #2563eb; /* A friendly blue */
-  background-color: #000000;   /* black */   
+  background-color: #2563eb;
+  /* A friendly blue */
+  background-color: #000000;
+  /* black */
   color: #ffffff;
   text-decoration: none;
-  border-radius: 0.5rem;            /* Soft corners */
-  font-size: 1.1rem;               
+  border-radius: 0.5rem;
+  /* Soft corners */
+  font-size: 1.1rem;
   font-weight: 600;
   transition: background-color 0.2s, transform 0.15s;
 }
 
 .soft-btn:hover {
-  background-color: #1e4fc3; 
-  background-color: #333333;        /* Slightly lighter on hover */
-  transform: translateY(-2px);      /* A tiny lift */
+  background-color: #1e4fc3;
+  background-color: #333333;
+  /* Slightly lighter on hover */
+  transform: translateY(-2px);
+  /* A tiny lift */
 }
 
 .soft-btn:active {
-  background-color: #444444;        /* Pressed */
-  transform: translateY(0);         /* Back down */
+  background-color: #444444;
+  /* Pressed */
+  transform: translateY(0);
+  /* Back down */
 }
 
 
-  .div-styled {
-    max-width: 800px; 
-    margin: 0 auto;
-  }
+.div-styled {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .div-inside {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
+.div-inside {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
-  .img-fluid-custom {
-    width: 100%; 
-    max-width: 600px; 
-    height: auto
-  }
+.img-fluid-custom {
+  width: 100%;
+  max-width: 600px;
+  height: auto
+}
 
-  .img-about {
-    max-width: 100%; 
-    height: auto;
-  }
+.img-about {
+  max-width: 100%;
+  height: auto;
+}
 
-  .service-list {
+.service-list {
   list-style: disc;
   padding-left: 1.25rem;
-  }
+}
 
-  /* YouTube SEO – centered, bulletless, tight list */
-  #youtube-seo .service-highlights {
-    list-style: none;          /* no bullets */
-    padding-left: 0;           /* remove indent */
-    margin: 1rem auto 0 auto;  /* center block */
-    max-width: 520px;
-    text-align: center;        /* center text */
-  }
+/* YouTube SEO – centered, bulletless, tight list */
+#youtube-seo .service-highlights {
+  list-style: none;
+  /* no bullets */
+  padding-left: 0;
+  /* remove indent */
+  margin: 1rem auto 0 auto;
+  /* center block */
+  max-width: 520px;
+  text-align: center;
+  /* center text */
+}
 
-  #youtube-seo .service-highlights li {
-    margin: 0;                 /* no spacing between items */
-  }
+#youtube-seo .service-highlights li {
+  margin: 0;
+  /* no spacing between items */
+}
 
-  @font-face {
+@font-face {
   font-family: 'Exo2';
   src: url('/fonts/Exo2.woff2') format('woff2');
   font-weight: 100 900;
   font-display: swap;
-  }
+}
 
-  @font-face {
+@font-face {
   font-family: 'SpaceGrotesk';
   src: url('/fonts/SpaceGrotesk.woff2') format('woff2');
   font-weight: 100 900;
   font-display: swap;
-  }
+}
 
-  body {
+body {
   font-family: 'SpaceGrotesk', Arial, sans-serif;
   line-height: 1.6;
-  }
+}
 
-  h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Exo2', Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.02em;
   line-height: 1.15;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+strong {
+  font-weight: 600;
+}
+
+ol.service-list {
+  list-style-type: decimal !important;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive table scroll on small screens */
+@media (max-width: 768px) {
+  #seo-table-container {
+    overflow-x: auto;
   }
 
-  strong {
-    font-weight: 600;
+  #seo-table-container th,
+  #seo-table-container td {
+    padding: 10px;
+    font-size: 1rem;
   }
-  
-    /* Media Queries */
+}
 
-    @media(max-width: 1250px) {
-      .blog-box{
-          width: 200px;
-      }
-    }
 
-    @media(max-width: 1100px) {
-      .blog-box{
-          width: 70%;
-      }
-    }
+/* Media Queries */
 
-   @media(max-width: 550px) {
-      .blog-box{
-          margin: 20px 10px;
-          width: 100%;
-      }
-      #blog {
-        padding: 20px;
-      }
-    }
+@media(max-width: 1250px) {
+  .blog-box {
+    width: 200px;
+  }
+}
 
-    @media (max-width: 576px) {
-    .card-text {
+@media(max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+
+@media(max-width: 550px) {
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
+
+  #blog {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-text {
     font-size: 1.05rem;
     line-height: 1.6;
-    }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
