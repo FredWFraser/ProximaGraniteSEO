@@ -439,8 +439,9 @@ ol.service-list {
   }
 }
 
+/* Default: Desktop */
 main {
-  padding-top: 160px; /* tall enough for 3-line header on small phones */
+  padding-top: 80px; /* desktop header height */
 }
 
 
@@ -476,9 +477,16 @@ main {
   }
 }
 
-/* Optional: smaller padding for desktop */
-@media (min-width: 769px) {
+/* Tablet: medium screens */
+@media (max-width: 768px) {
   main {
-    padding-top: 80px; /* desktop header height */
+    padding-top: 120px; /* adjust to 2-line header on tablets */
+  }
+}
+
+/* Small phones: iPhone 12 Mini/Pro, etc. */
+@media (max-width: 400px) {
+  main {
+    padding-top: 160px; /* 3-line header on small phones */
   }
 }
