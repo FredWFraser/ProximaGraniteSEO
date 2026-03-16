@@ -444,6 +444,52 @@ main {
   padding-top: 80px; /* desktop header height */
 }
 
+.seo-diagram {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Parallax + grid background for the section */
+.diagram-section {
+  position: relative;
+  background-image: url('./images/grid-background.png'); /* your grid */
+  background-attachment: fixed;  /* parallax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;            /* breathing room top/bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;                     /* space between diagram & table */
+}
+
+/* Diagram card */
+.diagram-container {
+  text-align: center;
+  max-width: 600px;                    /* keeps diagram proportional */
+  background-color: #fff;              /* matches your diagram's background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle floating effect */
+}
+
+/* Diagram image */
+.diagram-img {
+  width: 100%;
+  height: auto;       /* maintain aspect ratio 536x746 */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Caption text */
+.diagram-container figcaption {
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+
 
 /* Media Queries */
 
