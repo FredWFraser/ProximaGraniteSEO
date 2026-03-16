@@ -452,7 +452,6 @@ main {
 /* Parallax + grid background for the section */
 .diagram-section {
   position: relative;
-  background-image: url('./images/grid-background.png'); /* your grid */
   background-attachment: fixed;  /* parallax effect */
   background-size: cover;
   background-repeat: no-repeat;
