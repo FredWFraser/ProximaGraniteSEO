@@ -22,10 +22,12 @@
 
     <script>
       window.addEventListener('load', function () {
+      setTimeout(function () {
       gtag('event', 'generate_lead', {
-      event_category: 'lead',
-      event_label: 'contact_form'
-      });
+        event_category: 'lead',
+        event_label: 'contact_form'
+        });
+      }, 300);
     });
     </script>
 
