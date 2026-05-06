@@ -15,7 +15,7 @@
 
   <url>
     <loc>https://www.proximagranite.com/about-proxima-granite.html</loc>
-    <lastmod>2026-04-28T15:01:08+00:00</lastmod>
+    <lastmod>2026-05-06T15:20:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
@@ -50,26 +50,8 @@
   </url>
 
   <url>
-    <loc>https://www.proximagranite.com/proxima-granite-seo-blog.html</loc>
-    <lastmod>2026-04-23T17:37:08+00:00</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://www.proximagranite.com/my-new-best-friend-ai-part-one.html</loc>
-    <lastmod>2026-04-23T17:37:08+00:00</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-    <url>
-    <loc>https://www.proximagranite.com/my-new-best-friend-ai-part-two.html</loc>
-    <lastmod>2026-04-23T17:37:08+00:00</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://www.proximagranite.com/my-2026-new-years-resolutions.html</loc>
-    <lastmod>2026-04-23T17:37:08+00:00</lastmod>
+    <loc>https://www.proximagranite.com/proxima-granite-seo-articles.html</loc>
+    <lastmod>2026-05-06T15:13:08+00:00</lastmod>
     <priority>0.70</priority>
   </url>
 
@@ -79,9 +61,15 @@
     <priority>0.70</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://www.proximagranite.com/new-age-of-search.html</loc>
     <lastmod>2026-04-23T17:37:08+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.proximagranite.com/local-seo-positioning-shift.html</loc>
+    <lastmod>2026-05-06T15:13:08+00:00</lastmod>
     <priority>0.70</priority>
   </url>
 

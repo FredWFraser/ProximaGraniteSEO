@@ -1,117 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Preconnects first -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-    <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+<head>
+  <!-- Preconnects first -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
 
-      gtag("config", "G-5ZXN8L90BZ");
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+    gtag("config", "G-5ZXN8L90BZ");
+  </script>
 
-    <!-- Custom CSS -->
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
 
-    <!-- Optional preloads (only if fetched via JS) -->
-    <link
-      rel="preload"
-      href="./header.html"
-      as="fetch"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="./footer.html"
-      as="fetch"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./images/fred-fraser-proxima-granite-seo-400.avif"
-      type="image/avif"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./images/fred-fraser-proxima-granite-seo-728.avif"
-      type="image/avif"
-      fetchpriority="high"
-    />
+  <!-- Custom CSS -->
+  <link rel="preload" href="./css/style.css" as="style" />
+  <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
 
-    <meta charset="UTF-8" />
-    <title>About Fred Fraser | Technical SEO Consultant | Proxima Granite SEO</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <meta
-      name="description"
-      content="Learn about Fred Fraser, a technical SEO consultant with a background in QA, focused on improving search performance and ensuring data accuracy."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Optional preloads (only if fetched via JS) -->
+  <link rel="preload" href="./header.html" as="fetch" crossorigin="anonymous" />
+  <link rel="preload" href="./footer.html" as="fetch" crossorigin="anonymous" />
+  <link rel="preload" as="image" href="./images/fred-fraser-proxima-granite-seo-400.avif" type="image/avif"
+    fetchpriority="high" />
+  <link rel="preload" as="image" href="./images/fred-fraser-proxima-granite-seo-728.avif" type="image/avif"
+    fetchpriority="high" />
 
-    <link
-      rel="canonical"
-      href="https://www.proximagranite.com/about-proxima-granite.html"
-    />
+  <meta charset="UTF-8" />
+  <title>About Fred Fraser | Technical SEO Consultant | Proxima Granite SEO</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="description"
+    content="Learn about Fred Fraser, a technical SEO consultant with a background in QA, focused on improving search performance and ensuring data accuracy." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta
-      property="og:title"
-      content="About Proxima Granite SEO | Who We Are"
-    />
-    <meta
-      property="og:description"
-      content="Discover Proxima Granite SEO — a New Hampshire-based local SEO agency committed to helping SaaS, B2B, and growing organizations improve their online visibility with data-driven strategies."
-    />
-    <meta
-      property="og:image"
-      content="https://www.proximagranite.com/images/logo_hi_res_630_by_630.webp"
-    />
-    <meta
-      property="og:url"
-      content="https://www.proximagranite.com/about-proxima-granite.html"
-    />
-    <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.proximagranite.com/about-proxima-granite.html" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="About Proxima Granite SEO | Who We Are"
-    />
-    <meta
-      name="twitter:description"
-      content="Learn more about Proxima Granite SEO — our mission, values, and how we help SaaS, B2B, and growing organizations improve their online visibility."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.proximagranite.com/images/logo_highres_twitter.png"
-    />
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:title" content="About Proxima Granite SEO | Who We Are" />
+  <meta property="og:description"
+    content="Discover Proxima Granite SEO — a New Hampshire-based local SEO agency committed to helping SaaS, B2B, and growing organizations improve their online visibility with data-driven strategies." />
+  <meta property="og:image" content="https://www.proximagranite.com/images/logo_hi_res_630_by_630.webp" />
+  <meta property="og:url" content="https://www.proximagranite.com/about-proxima-granite.html" />
+  <meta property="og:type" content="website" />
 
-    <script type="application/ld+json">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About Proxima Granite SEO | Who We Are" />
+  <meta name="twitter:description"
+    content="Learn more about Proxima Granite SEO — our mission, values, and how we help SaaS, B2B, and growing organizations improve their online visibility." />
+  <meta name="twitter:image" content="https://www.proximagranite.com/images/logo_highres_twitter.png" />
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -164,7 +114,7 @@
         ]
       }
     </script>
-    <script type="application/ld+json">
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -184,13 +134,13 @@
         ]
       }
     </script>
-  </head>
+</head>
 
-  <body>
-    <div id="header"></div>
+<body>
+  <div id="header"></div>
 
-    <!-- Your main page content -->
-    <main>
+  <!-- Your main page content -->
+  <main>
     <!-- hero with image -->
     <!-- <div class="px-4 py-4 mt-0 mb-3 text-center"> -->
     <div class="px-4 py-3 py-md-4 mt-0 mb-3 text-center">
@@ -204,28 +154,22 @@
           title="Image of Proxima Granite SEO Founder Fred Fraser"
           loading="lazy"
         /> -->
-        <img
-          class="d-block img-about mx-auto mb-4"
-          src="./images/fred-fraser-proxima-granite-seo-400.avif"
-          srcset="
+        <img class="d-block img-about mx-auto mb-4" src="./images/fred-fraser-proxima-granite-seo-400.avif" srcset="
             ./images/fred-fraser-proxima-granite-seo-400.avif 400w,
             ./images/fred-fraser-proxima-granite-seo-728.avif 728w
-          "
-          sizes="(max-width: 400px) 100vw, 400px"
-          width="400"
-          height="400"
+          " sizes="(max-width: 400px) 100vw, 400px" width="400" height="400"
           alt="Professional photo of Fred Fraser, founder of Proxima Granite SEO"
-          title="Image of Proxima Granite SEO Founder Fred Fraser"
-          fetchpriority="high"
-        />
+          title="Image of Proxima Granite SEO Founder Fred Fraser" fetchpriority="high" />
         <figcaption>
-          Fred Fraser, founder of Proxima Granite SEO, helping SaaS, B2B, and growing organizations get found online once and for all.
+          Fred Fraser, founder of Proxima Granite SEO, helping SaaS, B2B, and growing organizations get found online
+          once and for all.
         </figcaption>
       </figure>
       <br />
       <h1 class="display-5 fw-bold text-body-emphasis">
         Technical SEO with a QA Mindset: Fixing What's Broken and Validating What Works
       </h1>
+      <br />
       <br />
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">
@@ -237,15 +181,19 @@
         <br />
         <br />
         <p class="lead mb-4">
-          I focus on identifying technical, structural, and user experience issues that impact both search visibility and conversions, especially in more complex systems.
+          I focus on identifying technical, structural, and user experience issues that impact both search visibility
+          and conversions, especially in more complex systems.
         </p>
         <br />
         <br />
         <p class="lead mb-4">
           Proxima Granite SEO was created during a career transition after years
           working in technical roles. I lost my job as software engineer and was
-          looking for direction. I built my knowledge of SEO and web development. I discovered that I could leverage my years of experience in engineering, data validation and analytical thinking plus that newfound knowledge and create something special. So here I am
-          embarking on a business adventure. Check out <a href="seo-vs-aeo-vs-geo.html">my perspective on the future of search</a> for a fun, interesting and eye-opening deep dive.
+          looking for direction. I built my knowledge of SEO and web development. I discovered that I could leverage my
+          years of experience in engineering, data validation and analytical thinking plus that newfound knowledge and
+          create something special. So here I am
+          embarking on a business adventure. Check out <a href="seo-vs-aeo-vs-geo.html">my perspective on the future of
+            search</a> for a fun, interesting and eye-opening deep dive.
         </p>
         <br />
         <br />
@@ -253,11 +201,9 @@
           I am a proud Franklin Pierce University graduate with a major in Computer
           Science. I have worked
           recently as a software QA engineer…
-          <strong
-            >That background means I approach SEO with a tester's mindset:
+          <strong>That background means I approach SEO with a tester's mindset:
             measuring results, validating changes, and focusing on what actually
-            improves rankings.</strong
-          >
+            improves rankings.</strong>
           I love to work with others and I come from a technical space so I can
           work comfortably with a developer if the need arises, or work with you
           on the technical aspects of your website. I have worked in a
@@ -269,9 +215,8 @@
         <br />
         <p class="lead mb-4">
           Who is an ideal client for us?
-          <strong
-            >Our ideal clients are SaaS, B2B, and growing organizations.</strong
-          > More examples are tech startups that want better Google visibility without
+          <strong>Our ideal clients are SaaS, B2B, and growing organizations.</strong> More examples are tech startups
+          that want better Google visibility without
           agency pricing. You are looking for more visibility, more clicks and
           ultimately - more business. You have a smaller budget for SEO. We are
           affordably priced and have the know-how to give you top of the class
@@ -282,59 +227,61 @@
         <br />
         <br />
         <p class="lead mb-4">
-          How are you ranking in Google search? <a href="contact-seo-nh.html">Contact us</a> today to request a free homepage review.
+          How are you ranking in Google search? <a href="contact-seo-nh.html">Contact us</a> today to request a free
+          homepage review.
         </p>
       </div>
     </div>
-    </main>
+  </main>
 
-    <div id="footer"></div>
+  <div id="footer"></div>
 
-    <!-- Your include.js script -->
-    <script src="js/include.js" defer></script>
-    <!-- <script
+  <!-- Your include.js script -->
+  <script src="js/include.js" defer></script>
+  <!-- <script
       src="//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"
       async
     ></script> -->
 
-    <!-- Floating Chat Button -->
-    <style>
-      #chat-trigger {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #344973;
-        color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        padding: 12px 18px;
-        font-size: 16px;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 9999;
-      }
-    </style>
+  <!-- Floating Chat Button -->
+  <style>
+    #chat-trigger {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #344973;
+      color: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+  </style>
 
-    <button id="chat-trigger">💬 Chat with us</button>
+  <button id="chat-trigger">💬 Chat with us</button>
 
-    <script>
-      document
-        .getElementById("chat-trigger")
-        .addEventListener("click", function () {
-          if (window.tidioChatApi) {
-            window.tidioChatApi.open();
-            return;
-          }
+  <script>
+    document
+      .getElementById("chat-trigger")
+      .addEventListener("click", function () {
+        if (window.tidioChatApi) {
+          window.tidioChatApi.open();
+          return;
+        }
 
-          var tidioScript = document.createElement("script");
-          tidioScript.src =
-            "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
-          tidioScript.async = true;
-          document.body.appendChild(tidioScript);
+        var tidioScript = document.createElement("script");
+        tidioScript.src =
+          "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
+        tidioScript.async = true;
+        document.body.appendChild(tidioScript);
 
-          this.style.display = "none"; // optional: hide button after loading
-        });
-    </script>
-    <!-- end new chat button code -->
-  </body>
+        this.style.display = "none"; // optional: hide button after loading
+      });
+  </script>
+  <!-- end new chat button code -->
+</body>
+
 </html>
