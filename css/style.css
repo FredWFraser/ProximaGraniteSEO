@@ -134,7 +134,8 @@ footer {
 .blog-body {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'SpaceGrotesk', Arial, sans-serif;
   /* font-family: 'Poppins', sans-serif; */
   box-sizing: border-box;
   padding-top: 70px;
@@ -486,6 +487,19 @@ main {
   color: #000;
   margin-top: 0.5rem;
   text-align: center;
+}
+
+.article-image img {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 
