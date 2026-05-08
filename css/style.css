@@ -300,6 +300,30 @@ ul {
   transition: all ease 0.3s;
 }
 
+/* Base card styling */
+.blog-box {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+  will-change: transform;
+}
+
+/* Hover effect */
+.blog-box:hover {
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow:
+    0 18px 35px rgba(0, 0, 0, 0.16);
+}
+
 .card {
   border-radius: 1rem;
 }
@@ -442,7 +466,8 @@ ol.service-list {
 
 /* Default: Desktop */
 main {
-  padding-top: 80px; /* desktop header height */
+  padding-top: 80px;
+  /* desktop header height */
 }
 
 .seo-diagram {
@@ -453,30 +478,37 @@ main {
 /* Parallax + grid background for the section */
 .diagram-section {
   position: relative;
-  background-attachment: fixed;  /* parallax effect */
+  background-attachment: fixed;
+  /* parallax effect */
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 4rem 1rem;            /* breathing room top/bottom */
+  padding: 4rem 1rem;
+  /* breathing room top/bottom */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;                     /* space between diagram & table */
+  gap: 2rem;
+  /* space between diagram & table */
 }
 
 /* Diagram card */
 .diagram-container {
   text-align: center;
-  max-width: 600px;                    /* keeps diagram proportional */
-  background-color: #fff;              /* matches your diagram's background */
+  max-width: 600px;
+  /* keeps diagram proportional */
+  background-color: #fff;
+  /* matches your diagram's background */
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle floating effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* subtle floating effect */
 }
 
 /* Diagram image */
 .diagram-img {
   width: 100%;
-  height: auto;       /* maintain aspect ratio 536x746 */
+  height: auto;
+  /* maintain aspect ratio 536x746 */
   display: block;
   margin: 0 auto;
 }
@@ -501,8 +533,6 @@ main {
   margin-top: 0.5rem;
   font-style: italic;
 }
-
-
 
 /* Media Queries */
 
@@ -539,13 +569,15 @@ main {
 /* Tablet: medium screens */
 @media (max-width: 768px) {
   main {
-    padding-top: 120px; /* adjust to 2-line header on tablets */
+    padding-top: 120px;
+    /* adjust to 2-line header on tablets */
   }
 }
 
 /* Small phones: iPhone 12 Mini/Pro, etc. */
 @media (max-width: 400px) {
   main {
-    padding-top: 160px; /* 3-line header on small phones */
+    padding-top: 160px;
+    /* 3-line header on small phones */
   }
 }
