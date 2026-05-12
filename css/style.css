@@ -79,7 +79,7 @@ footer {
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
 }
 
 /* Style for the labels */
@@ -117,7 +117,10 @@ footer {
   width: 100%;
   padding: 12px;
   margin-top: 20px;
-  background-color: black;
+  transition: 0.5s;
+  /*background-color: black;*/
+  background-image: linear-gradient(to right, #000046 0%, #1CB5E0 51%, #000046 100%);
+  background-size: 200% auto;
   color: white;
   border: none;
   border-radius: 4px;
@@ -126,7 +129,12 @@ footer {
 }
 
 .contact-form button:hover {
-  background-color: #00416A;
+  /*background-image: #00416A;*/
+  /*background-image: linear-gradient(to right, #00416A 0%, #007991 51%, #00416A 100%);*/
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
 }
 
 /* styling for blog page */
@@ -363,6 +371,33 @@ ul {
   /* Back down */
 }
 
+.btn-grad {
+  background-image: linear-gradient(to right, #000046 0%, #1CB5E0 51%, #000046 100%);
+}
+
+.btn-grad {
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
+  /*transition: background-color 0.2s, transform 0.15s;*/
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 0.5rem;
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-family: 'Exo2', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 
 .div-styled {
   max-width: 800px;
@@ -433,7 +468,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.contact-form {
   font-family: 'Exo2', Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.02em;
