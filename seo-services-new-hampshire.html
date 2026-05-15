@@ -1,105 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Preconnects first -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-    <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+<head>
+  <!-- Preconnects first -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
 
-      gtag("config", "G-5ZXN8L90BZ");
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+    gtag("config", "G-5ZXN8L90BZ");
+  </script>
 
-    <!-- Custom CSS -->
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
 
-    <!-- Optional preloads (only if fetched via JS) -->
-    <link
-      rel="preload"
-      href="./header.html"
-      as="fetch"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="./footer.html"
-      as="fetch"
-      crossorigin="anonymous"
-    />
+  <!-- Custom CSS -->
+  <link rel="preload" href="./css/style.css" as="style" />
+  <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
 
-    <meta charset="UTF-8" />
-    <title>
-      | SEO Services & Technical SEO Audits | Proxima Granite SEO
-    </title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <meta
-      name="description"
-      content="Technical SEO services including audits, on-page optimization, keyword strategy, and data validation for companies looking to improve search visibility."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Optional preloads (only if fetched via JS) -->
+  <link rel="preload" href="./header.html" as="fetch" crossorigin="anonymous" />
+  <link rel="preload" href="./footer.html" as="fetch" crossorigin="anonymous" />
 
-    <link
-      rel="canonical"
-      href="https://www.proximagranite.com/seo-services-new-hampshire.html"
-    />
+  <meta charset="UTF-8" />
+  <title>
+    | SEO Services & Technical SEO Audits | Proxima Granite SEO
+  </title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="description"
+    content="Technical SEO services including audits, on-page optimization, keyword strategy, and data validation for companies looking to improve search visibility." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta
-      property="og:title"
-      content="SEO Services in New Hampshire | Proxima Granite SEO"
-    />
-    <meta
-      property="og:description"
-      content="Technical SEO services including audits, on-page optimization, keyword strategy, and data validation for companies looking to improve search visibility."
-    />
-    <meta
-      property="og:image"
-      content="https://www.proximagranite.com/images/logo_hi_res_630_by_630.webp"
-    />
-    <meta
-      property="og:url"
-      content="https://www.proximagranite.com/seo-services-new-hampshire.html"
-    />
-    <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.proximagranite.com/seo-services-new-hampshire.html" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="SEO Services in New Hampshire | Proxima Granite SEO"
-    />
-    <meta
-      name="twitter:description"
-      content="Technical SEO services including audits, on-page optimization, keyword strategy, and data validation for companies looking to improve search visibility."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.proximagranite.com/images/logo_highres_twitter.png"
-    />
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:title" content="SEO Services in New Hampshire | Proxima Granite SEO" />
+  <meta property="og:description"
+    content="Technical SEO services including audits, on-page optimization, keyword strategy, and data validation for companies looking to improve search visibility." />
+  <meta property="og:image" content="https://www.proximagranite.com/images/logo_hi_res_630_by_630.webp" />
+  <meta property="og:url" content="https://www.proximagranite.com/seo-services-new-hampshire.html" />
+  <meta property="og:type" content="website" />
 
-    <script type="application/ld+json">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SEO Services in New Hampshire | Proxima Granite SEO" />
+  <meta name="twitter:description"
+    content="Technical SEO services including audits, on-page optimization, keyword strategy, and data validation for companies looking to improve search visibility." />
+  <meta name="twitter:image" content="https://www.proximagranite.com/images/logo_highres_twitter.png" />
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -157,8 +117,8 @@
                 },
                 {
                   "@type": "Service",
-                  "name": "Local SEO Services",
-                  "description": "Local search optimization including Google Business Profile optimization, citation management, and local visibility improvements.",
+                  "name": "Local & Regional Search Optimization",
+                  "description": "Regional and location-based search optimization including Google Business Profile management, structured location data consistency, and local search visibility improvements.",
                   "url": "https://www.proximagranite.com/seo-services-new-hampshire#local-seo"
                 },
                 {
@@ -207,7 +167,7 @@
                 "name": "Who are your SEO services for?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Our SEO services are designed for Saas or B2B companies seeking better visibility, traffic, and local search performance."
+                  "text": "Our SEO services are designed for SaaS, B2B, and growth-focused organizations seeking stronger search visibility, technical SEO performance, and sustainable organic growth."
                 }
               },
               {
@@ -223,7 +183,7 @@
         ]
       }
     </script>
-    <script type="application/ld+json">
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -243,11 +203,11 @@
         ]
       }
     </script>
-  </head>
+</head>
 
-  <body>
-    <div id="header"></div>
-    <main>
+<body>
+  <div id="header"></div>
+  <main>
 
     <!-- Your main page content -->
 
@@ -259,7 +219,14 @@
       <br />
 
       <p class="lead mb-4">
-        Proxima Granite SEO provides practical SEO services for Saas and B2B companies, with a focus on search visiblity, technical SEO issues, with optional add-ons available as needed. <a href="seo-vs-aeo-vs-geo.html">Learn how SEO, AEO, and GEO work together</a>. Also learn more <a href="about-proxima-granite.html">about me</a> here.
+        Proxima Granite SEO provides technical SEO services for SaaS, B2B, and growth-focused organizations. The focus
+        is on improving search visibility, resolving technical and structural SEO issues, and strengthening organic
+        performance through clear, data-driven analysis. <a href="seo-vs-aeo-vs-geo.html">Learn how SEO, AEO, and GEO
+          work together</a>. Also learn more <a href="about-proxima-granite.html">about me</a> here.
+        <br />
+        <br />
+        Engagements are structured around audits, prioritization, and implementation support depending on your internal
+        resources.
       </p>
       <br />
       <br />
@@ -267,12 +234,13 @@
       <div class="mb-5">
         <h2 class="h3">🧩 Website & Funnel Audit</h2>
         <p>
-          A strategic review of your website and conversion funnel to uncover SEO, UX, technical, and tracking issues that impact growth.
+          A strategic review of your website and conversion funnel to uncover SEO, UX, technical, and tracking issues
+          that impact growth.
         </p>
         <ul class="list-unstyled">
-          <li>SEO, UX, technical, and QA analysis </li>
-          <li>Funnel and conversion path evaluation</li>
-          <li>Analytics, indexing, and performance insights</li>
+          <li>Technical SEO and site architecture review</li>
+          <li>Funnel and conversion path analysis</li>
+          <li>Indexing, crawlability, and analytics validation</li>
         </ul>
       </div>
 
@@ -282,11 +250,12 @@
       <div class="mb-5">
         <h2 class="h3">🔧 Optimization Roadmap + Guidance</h2>
         <p>
-          A prioritized action plan that helps your team implement the right fixes for better visibility, performance, and conversions.
+          A prioritized action plan that helps your team implement the right fixes for better visibility, performance,
+          and conversions.
         </p>
         <ul class="list-unstyled">
           <li>Prioritized recommendations and next steps</li>
-          <li>Collaboration with developers and stakeholders</li>
+          <li>Implementation guidance for internal teams and engineering stakeholders</li>
           <li>Validation and QA of completed improvements</li>
         </ul>
       </div>
@@ -296,8 +265,8 @@
       <div class="mb-5">
         <h2 class="h3">🔗 Technical SEO</h2>
         <p>
-          We ensure your website is cleanly built and optimized for search
-          engine indexing.
+          Technical SEO focused on improving crawlability, indexation, site architecture, and overall search
+          performance.
         </p>
         <ul class="list-unstyled">
           <li>XML sitemap and robots.txt configuration</li>
@@ -356,15 +325,15 @@
       <br />
       <br />
 
-    <div class="mb-5">
-        <h2 class="h3">📍 Local SEO Services</h2>
+      <div class="mb-5">
+        <h2 class="h3">📍 Local & Regional Search Optimization</h2>
         <p>
-          Ideal for companies with physical locations or local service areas.
+          Designed for organizations that rely on strong visibility across local and regional search results.
         </p>
         <ul class="list-unstyled">
-          <li>Google Business Profile setup and optimization</li>
-          <li>Local directory listings and citations</li>
-          <li>Location-specific content improvements</li>
+          <li>Google Business Profile optimization and local search visibility improvements</li>
+          <li>Location data consistency and citation management</li>
+          <li>Location-focused content and landing page optimization</li>
         </ul>
       </div>
 
@@ -382,46 +351,24 @@
         }
       </style> -->
 
-      <section
-        id="youtube-seo"
-        class="service-card"
-        aria-labelledby="youtube-seo-title"
-      >
+      <section id="youtube-seo" class="service-card" aria-labelledby="youtube-seo-title">
         <div class="service-icon" aria-hidden="true">
           <!-- Play button in a red rounded rectangle (accessible SVG icon) -->
         </div>
 
         <div class="service-content">
           <h2 class="h3" id="youtube-seo-title">
-            <svg
-              viewBox="0 0 64 64"
-              width="40"
-              height="40"
-              role="img"
-              focusable="false"
-              aria-hidden="true"
-            >
-              <rect
-                x="2"
-                y="8"
-                rx="10"
-                ry="10"
-                width="60"
-                height="48"
-                fill="#FF0000"
-              ></rect>
+            <svg viewBox="0 0 64 64" width="40" height="40" role="img" focusable="false" aria-hidden="true">
+              <rect x="2" y="8" rx="10" ry="10" width="60" height="48" fill="#FF0000"></rect>
               <polygon points="27,22 27,42 45,32" fill="#FFFFFF"></polygon>
             </svg>
             YouTube SEO
           </h2>
           <p class="service-blurb">
-            Optimize your channel and videos to rank in YouTube & Google, boost
-            watch time, and grow subscribers.
+            Video SEO optimization focused on improving discoverability across YouTube and Google search.
             <br />
-            <strong
-              >This service is ideal for businesses and creators using video as
-              part of their broader SEO strategy.</strong
-            >
+            <strong>This service is ideal for businesses and creators using video as
+              part of their broader SEO strategy.</strong>
           </p>
 
           <ul class="service-highlights">
@@ -448,82 +395,85 @@
       <div class="mb-5">
         <h3>🌐 Website Design & Website Restructuring</h3>
         <p>
-          Whether you're launching a new website or improving an existing one, we help businesses create a stronger foundation for growth. Our focus is on website structure, SEO, usability, and performance, ensuring your site supports visibility, engagement, and long-term scalability.
+          Whether launching a new site or improving an existing one, we focus on SEO-aligned site architecture,
+          structure, and performance foundations that support organic visibility and scalability.
         <ul class="list-unstyled">
           <li>
-            Website builds for businesses establishing an online presence
+            SEO-aligned website structure and architecture planning
           </li>
           <li>
             Strategic restructuring of outdated or underperforming websites
           </li>
           <li>
-            SEO-focused site architecture and content organization
+            Technical improvements supporting crawlability, indexing, and search performance
           </li>
           <li>
-            Performance and usability improvements designed to support lead generation and growth
+            Content organization and internal linking improvements for stronger organic visibility
           </li>
           <li>
-            Collaboration with your developer or internal team for implementation and technical execution
+            Collaboration with developers or internal teams for implementation and technical execution
           </li>
         </ul>
         <br />
 
         <p class="lead mb-4">
-          Request a free, no-obligation review of your homepage. <a href="contact-seo-nh.html">Request your free SEO review</a> and see how your homepage performs in Google search.
+          Request a free, no-obligation review of your homepage. <a href="contact-seo-nh.html">Request your free SEO
+            review</a> and see how your homepage performs in Google search.
         </p>
       </div>
     </section>
-    </main>
-    
-    <!-- main page content end -->
+  </main>
 
-    <div id="footer"></div>
+  <!-- main page content end -->
 
-    <!-- Your include.js script -->
-    <script src="js/include.js" defer></script>
-    <!-- <script
+  <div id="footer"></div>
+
+  <!-- Your include.js script -->
+  <script src="js/include.js" defer></script>
+  <!-- <script
       src="//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"
       async
     ></script> -->
 
-    <!-- Floating Chat Button -->
-    <style>
-      #chat-trigger {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #344973;
-        color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        padding: 12px 18px;
-        font-size: 16px;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 9999;
-      }
-    </style>
+  <!-- Floating Chat Button -->
+  <style>
+    #chat-trigger {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #344973;
+      color: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+  </style>
 
-    <button id="chat-trigger">💬 Chat with us</button>
+  <button id="chat-trigger">💬 Chat with us</button>
 
-    <script>
-      document
-        .getElementById("chat-trigger")
-        .addEventListener("click", function () {
-          if (window.tidioChatApi) {
-            window.tidioChatApi.open();
-            return;
-          }
+  <script>
+    document
+      .getElementById("chat-trigger")
+      .addEventListener("click", function () {
+        if (window.tidioChatApi) {
+          window.tidioChatApi.open();
+          return;
+        }
 
-          var tidioScript = document.createElement("script");
-          tidioScript.src =
-            "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
-          tidioScript.async = true;
-          document.body.appendChild(tidioScript);
+        var tidioScript = document.createElement("script");
+        tidioScript.src =
+          "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
+        tidioScript.async = true;
+        document.body.appendChild(tidioScript);
 
-          this.style.display = "none"; // optional: hide button after loading
-        });
-    </script>
-    <!-- end new chat button code -->
-  </body>
+        this.style.display = "none"; // optional: hide button after loading
+      });
+  </script>
+  <!-- end new chat button code -->
+</body>
+
 </html>
