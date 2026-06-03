@@ -105,7 +105,8 @@ footer {
 
 .content a:not(.btn-grad) {
     color: #7DB7FF;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .content a:not(.btn-grad):hover {
