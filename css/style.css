@@ -103,6 +103,15 @@ footer {
     --bs-heading-color: #EAEAEA;
 }
 
+.content a:not(.btn-grad) {
+    color: #7DB7FF;
+    text-decoration: none;
+}
+
+.content a:not(.btn-grad):hover {
+    color: #A6D1FF;
+    text-decoration: underline;
+}
 
 p,
 h1,
@@ -429,16 +438,18 @@ ul {
     /* Back down */
 }
 
-.btn-grad {
+/*.btn-grad {
+    color: white;
     background-image: linear-gradient(to right, #000046 0%, #1CB5E0 51%, #000046 100%);
-}
+}*/
 
 .btn-grad {
     padding: 0.75rem 1.5rem;
     transition: 0.5s;
     /*transition: background-color 0.2s, transform 0.15s;*/
+    background-image: linear-gradient(to right, #000046 0%, #1CB5E0 51%, #000046 100%);
     background-size: 200% auto;
-    color: white;
+    color: #fff;
     box-shadow: 0 0 20px #eee;
     border-radius: 0.5rem;
     display: inline-block;
@@ -653,7 +664,7 @@ main {
 
 .image-caption {
     font-size: 0.9rem;
-    color: #666;
+    color: #EAEAEA;
     margin-top: 0.5rem;
     font-style: italic;
 }
