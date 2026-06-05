@@ -15,7 +15,7 @@ body {
     /* Ensure the body is above the grid overlay */
 }
 
-/* Tech grid overlay */
+/* Tech grid overlay Starry Starry Night */
 
 /* body::before {
     content: "";
@@ -44,8 +44,8 @@ body::before {
     z-index: -1;
 
     background-image:
-        linear-gradient(#303030 1px, transparent 1px),
-        linear-gradient(90deg, #303030 1px, transparent 1px);
+        linear-gradient(#343434 1px, transparent 1px),
+        linear-gradient(90deg, #343434 1px, transparent 1px);
 
     background-size: 100px 100px;
     opacity: 0.15;
@@ -60,12 +60,15 @@ body::after {
 
     background-image:
         radial-gradient(circle at 0 0,
-            rgba(170, 200, 255, 0.45) 1px,
-            transparent 1.5px);
+            rgba(190, 220, 255, 0.55) 1.05px,
+            transparent 1.5px),
+        radial-gradient(circle at 30px 70px,
+            rgba(210, 230, 255, 0.50) 1.05px,
+            transparent 1.55px);
 
-    background-size: 100px 100px;
-
-    opacity: 1;
+    background-size: 100px 100px,
+        240px 240px;
+    opacity: 0.48;
 }
 
 /* END Tech grid overlay */
@@ -732,6 +735,21 @@ main {
         transform: translateY(0px);
     }
 }
+
+@keyframes starTwinkle {
+    0% {
+        --star: rgba(170, 200, 255, 0.38);
+    }
+
+    50% {
+        --star: rgba(190, 220, 255, 0.55);
+    }
+
+    100% {
+        --star: rgba(170, 200, 255, 0.38);
+    }
+}
+
 
 /* Media Queries */
 
