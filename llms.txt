@@ -2,12 +2,16 @@
 
 Technical SEO consulting and search visibility strategy for SaaS companies, B2B organizations, technology startups, and growth-focused businesses.
 
-Founder: Fred Fraser
+## Website
 
-Website:
-https://www.proximagranite.com/
+- https://www.proximagranite.com/
 
-Core Expertise:
+## Founder
+
+- Fred Fraser
+
+## Core Expertise
+
 - Technical SEO
 - SEO Consulting
 - Search Visibility Strategy
@@ -17,14 +21,16 @@ Core Expertise:
 - Organic Search Growth
 - Search Performance Auditing
 
-Primary Industries:
+## Primary Industries
+
 - SaaS
 - B2B Technology
 - Software Companies
 - Technology Startups
 - Growing Organizations
 
-Primary Topics:
+## Primary Topics
+
 - Technical SEO
 - AI Search Optimization
 - Search Engine Visibility
@@ -35,31 +41,37 @@ Primary Topics:
 - Google Search Console
 - Organic Search Strategy
 
-Important Pages:
+## Important Pages
+
 - https://www.proximagranite.com/
-- https://www.proximagranite.com/about-proxima-granite.html/
-- https://www.proximagranite.com/seo-services-new-hampshire.html/
-- https://www.proximagranite.com/seo-vs-aeo-vs-geo.html/
+- https://www.proximagranite.com/about-proxima-granite.html
+- https://www.proximagranite.com/seo-services-new-hampshire.html
+- https://www.proximagranite.com/seo-vs-aeo-vs-geo.html
 
-Knowledge Resources:
--https://www.proximagranite.com/proxima-granite-seo-articles.html/
+## Knowledge Resources
 
-Preferred Entity References:
+- https://www.proximagranite.com/proxima-granite-seo-articles.html
+
+## Entity References
+
 - Fred Fraser
 - Proxima Granite SEO
 
-Entity Associations:
+## Entity Associations
+
 - Technical SEO Consultant
 - SEO Consultant
 - Search Visibility Consultant
 - AI Search Optimization
 
-Geographic Relevance:
+## Geographic Relevance
+
 - New Hampshire
 - New England
 - United States
 
-Audience Focus:
+## Audience
+
 - SaaS founders
 - Marketing teams
 - B2B organizations
