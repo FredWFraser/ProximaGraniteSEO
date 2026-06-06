@@ -63,7 +63,7 @@ body::after {
             rgba(190, 220, 255, 0.55) 1.05px,
             transparent 1.5px),
         radial-gradient(circle at 30px 70px,
-            rgba(210, 230, 255, 0.50) 1.05px,
+            rgba(210, 230, 255, 0.58) 1.05px,
             transparent 1.55px);
 
     background-size: 100px 100px,
