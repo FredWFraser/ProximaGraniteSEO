@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Preconnects first -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <link rel="preload" href="/fonts/Exo2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZXN8L90BZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-5ZXN8L90BZ");
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" fetchpriority="high" />
+
+    <!-- Optional preloads (only if fetched via JS) -->
+    <link rel="preload" href="./header.html" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="./footer.html" as="fetch" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <title>Google Chrome Canary | How I use it to test Agentic Browsing</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="description"
+        content="This article talks about the experimental Google Chrome Canary browser and how it is used for AI insights." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="canonical" href="https://www.proximagranite.com/google-canary-case-study.html" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:title" content="Google Chrome Canary | How I use it to test Agentic Browsing" />
+    <meta property="og:description"
+        content="Read about the new Google Chrome Canary browser and how it is used for AI insights." />
+    <meta property="og:image" content="https://www.proximagranite.com/images/logo_hi_res_630_by_630.webp" />
+    <meta property="og:url" content="https://www.proximagranite.com/google-canary-case-study.html" />
+    <meta property="og:type" content="article" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Google Chrome Canary | How I use it to test Agentic Browsing" />
+    <meta name="twitter:description"
+        content="Read about the new Google Chrome Canary browser and how it is used for AI insights." />
+    <meta name="twitter:image" content="https://www.proximagranite.com/images/logo-highres-twitter.png" />
+
+    <script type="application/ld+json">
+                  {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                      {
+                        "@type": "Organization",
+                        "@id": "https://www.proximagranite.com/#organization",
+                        "url": "https://www.proximagranite.com",
+                        "name": "Proxima Granite SEO",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+                          "width": 200,
+                          "height": 200
+                        },
+                        "sameAs": [
+                          "https://www.facebook.com/proxima.granite.seo/",
+                          "https://www.linkedin.com/in/frederickwfraser/"
+                        ]
+                      },
+                      {
+                        "@type": "Person",
+                        "@id": "https://www.proximagranite.com/#fred-fraser",
+                        "name": "Fred Fraser",
+                        "worksFor": {
+                          "@id": "https://www.proximagranite.com/#organization"
+                        }
+                      },
+                      {
+                        "@type": "Article",
+                        "@id": "https://www.proximagranite.com/#article",
+                        "url": "https://www.proximagranite.com/local-seo-positioning-shift.html",
+                        "headline": "Google Chrome Canary",
+                        "alternativeHeadline": "How I use it to test Agentic Browsing",
+                        "description": "I have recently downloaded Google Chrome Canary after reading about it online. I understood it to be new, and importantly, experimental. I recently added llms.txt to my website, which is also experimental and helps AI learn about your site. I lean toward being not only an early adopter but I like experimentation and want to be on the “cutting edge” all the time, ahead of the curve. ",
+                        "image": "https://www.proximagranite.com/images/proxima-granite-seo-logo.avif",
+                        "author": {
+                          "@type": "Person",
+                          "@id": "https://www.proximagranite.com/#fred-fraser",
+                          "name": "Fred Fraser"
+                        },
+                        "publisher": {
+                          "@id": "https://www.proximagranite.com/#organization"
+                        },
+                        "datePublished": "2026-05-05T21:10:00-04:00",
+                        "mainEntityOfPage": {
+                          "@type": "WebPage",
+                          "@id": "https://www.proximagranite.com/local-seo-positioning-shift.html"
+                        },
+                        "articleBody": "I have recently downloaded Google Chrome Canary after reading about it online. I understood it to be new, and importantly, experimental. I recently added llms.txt to my website, which is also experimental and helps AI learn about your site. I lean toward being not only an early adopter but I like experimentation and want to be on the “cutting edge” all the time, ahead of the curve. I use Google Lighthouse all the time for client SEO as well as for my own self-developed website. I liked reading that Canary has a feature to test for AI. This is the focus of this case study. Before I get more into that, let’s take a look at what Google Chrome Canary is, straight from Google itself. 
+
+What Exactly is Google Chrome Canary?
+
+Google Chrome Canary is the most experimental, "bleeding-edge" version of the Google Chrome browser. Updated daily directly from the raw codebase, it is designed specifically for developers and early adopters to test new, unfinished features and web APIs before they roll out to the general public.
+
+
+Key Characteristics
+
+* Highly Experimental: It features the absolute latest code, meaning it can sometimes crash, glitch, or break down completely. 
+* Daily Updates: Builds are compiled and released automatically every single day.
+* Safe to Test: It installs as a completely separate application with its own profile. This means you can use it alongside your standard, stable Chrome without losing any of your main bookmarks, passwords, or data.
+* Exclusive Access: It often contains new developer tools, UI tweaks, and experimental flags that are months away from reaching standard users.
+
+
+Who Should Use It?
+* Web Developers: To test website compatibility and ensure new features break gracefully.
+* Tech Enthusiasts: For those who want a sneak peek at upcoming browser changes and AI-driven features.
+
+
+Note: Because of its instability, it is not recommended as your primary, everyday web browser.
+
+Case Study
+
+I downloaded Canary from the Internet, for free, and started to use it to test out my website. Once I’ve gone in incognito mode, I rendered my website. I right-click, choose “Inspect”, and navigate to Lighthouse. Once there, we have the familiar categories Performance, Accessibility, Best Practices, and SEO. These are all helpful in the work of an SEO analyst or web developer such as myself. However, there is now a new feature, Agentic Browsing. I check that one, and choose Mobile for the device. Then I click Analyze Page Load. I get back results for the usual features and now a result for agentic browsing! These checks ensure high-quality, browsable websites for AI agents, and validate the correctness of WebMCP integrations. Note, this category is still under development and subject to change. There are three audits. Accessibility tree is well formed (a well-formed accessibility tree helps AI agents to navigate and interact with the page). Next is cumulative layout shift (Cumulative Layout shift measures the movement of visible elements within the viewport). Have you ever visited a website on your mobile device, tried to click a button, and it moved? That is an example of cumulative layout shift. Last is llms.txt follows recommendations.  If your llms.txt file does not follow recommendations, large language models may not be able to understand how you want your website to be crawled or used for training. The llms.txt file should be a Markdown file containing at least one H1 header. With my first run, I failed on number three and passed the others. I fixed my llms.txt file and re-ran. I eventually got it to pass and have posted an example of my file. 
+
+I made two specific changes:
+1. Convert every URL to Markdown link syntax. 
+2. Convert every section label into a proper Markdown heading (##).
+
+
+Conclusion
+
+Google Chrome Canary is an experimental browser, which has the new Agentic Browsing feature useful for SEO analysts or web developers. Be aware that it is new and not stable as of yet, prone to crashes. Use is separate from your usual Chrome browser setup. it is generally not recommended as your primary or work browser.
+"
+                      }
+                    ]
+                  }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.proximagranite.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Insights",
+            "item": "https://www.proximagranite.com/proxima-granite-seo-articles.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Google Chrome Canary | How I use it to test Agentic Browsing",
+            "item": "https://www.proximagranite.com/google-canary-case-study.html"
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- Your main page content -->
+    <main class="content">
+        <!-- hero with image -->
+        <div class="px-4 py-2 my-2 text-center">
+            <h1 class="display-5 fw-bold mb-5">
+                Google Chrome Canary By Fred Fraser
+            </h1>
+            <h2 class="fw-bold mb-5">
+                How I Use It To Test Agentic Browsing
+            </h2>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-5">
+                    I have recently downloaded Google Chrome Canary after reading about it online. I understood it to be
+                    new, and importantly, experimental. I recently added llms.txt to my website, which is also
+                    experimental and helps AI learn about your site. I lean toward being not only an early adopter but I
+                    like experimentation and want to be on the “cutting edge” all the time, ahead of the curve. I use
+                    Google Lighthouse all the time for client SEO as well as for my own self-developed website. I liked
+                    reading that Canary has a feature to test for AI. This is the focus of this case study. Before I get
+                    more into that, let's take a look at what Google Chrome Canary is, straight from Google itself.
+                </p>
+                <p class="lead mb-5"><em>What Exactly is Google Chrome Canary?</em></p>
+                <p class="lead mb-5">
+                    <strong>Google Chrome Canary</strong> is the most experimental, "bleeding-edge" version of the
+                    Google Chrome
+                    browser.
+                    Updated daily directly from the raw codebase, it is designed specifically for developers and early
+                    adopters to test new, unfinished features and web APIs before they roll out to the general public.
+                    If you want a clearer picture of your own business website's search performance
+                    <a href="contact-seo-nh.html">
+                        contact
+                        us</a> today to request a free
+                    homepage review.
+                </p>
+                <div class="article-image1 mb-5">
+                    <img src="./images/CanaryLighhouse.avif" class="img-fluid mb-4"
+                        alt="Snapshot of Google Chrome Canary analyzing Proxima Granite website" loading="lazy"
+                        title="Image of Google Chrome Canary analyzing Proxima Granite website" width="1400"
+                        height="910" />
+                    <p class="image-caption">
+                        Google Chrome Canary analyzing Proxima Granite website for Agentic Browsing.
+                    </p>
+                </div>
+
+                <h3 class="fw-bold mb-5">
+                    Key Characteristics
+                </h3>
+                <div class="lead mb-5 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li><strong>Highly Experimental: </strong>It features the absolute latest code, meaning it can
+                            sometimes crash, glitch, or break down completely. </li>
+                        <li><strong>Daily Updates: </strong>Builds are compiled and released automatically every single
+                            day.</li>
+                        <li><strong>Safe to Test: </strong>It installs as a completely separate application with its own
+                            profile. This means you can use it alongside your standard, stable Chrome without losing any
+                            of your main bookmarks, passwords, or data.</li>
+                        <li><strong>Exclusive Access: </strong>It often contains new developer tools, UI tweaks, and
+                            experimental flags that are months away from reaching standard users.</li>
+                    </ul>
+                </div>
+                <h3 class="fw-bold mb-5">
+                    Who Should Use It?
+                </h3>
+                <div class="lead mb-5 text-center">
+                    <ul class="service-list d-inline-block text-start">
+                        <li><strong>Web Developers: </strong>To test website compatibility and ensure new features break
+                            gracefully. </li>
+                        <li><strong>Tech Enthusiasts: </strong>BFor those who want a sneak peek at upcoming browser
+                            changes and AI-driven features.</li>
+                    </ul>
+                </div>
+                <p class="lead mb-5"><strong>Note:</strong> Because of its instability, it is not recommended as your
+                    primary,
+                    everyday web browser.</p>
+                <h3 class="fw-bold mb-5">
+                    Case Study
+                </h3>
+                <p class="lead mb-5">
+                    I downloaded Canary from the Internet, for free, and started to use it to test out my website. Once
+                    I'd gone in incognito mode, I rendered my website. I right-click, choose “Inspect”, and navigate to
+                    Lighthouse. Once there, we have the familiar categories Performance, Accessibility, Best Practices,
+                    and SEO. These are all helpful in the work of an SEO analyst or web developer such as myself.
+                    However, there is now a new feature, Agentic Browsing. I check that one, and choose Mobile for the
+                    device. Then I click Analyze Page Load. I get back results for the usual features and now a result
+                    for agentic browsing! These checks ensure high-quality, browsable websites for AI agents, and
+                    validate the correctness of WebMCP integrations. Note, this category is still under development and
+                    subject to change.
+                </p>
+                <p class="lead mb-5">
+                    There are three audits. Accessibility tree is well formed (a well-formed
+                    accessibility tree helps AI agents to navigate and interact with the page). Next is cumulative
+                    layout shift (Cumulative Layout shift measures the movement of visible elements within the
+                    viewport). Have you ever visited a website on your mobile device, tried to click a button, and it
+                    moved? That is an example of cumulative layout shift. Last is llms.txt follows recommendations. If
+                    your llms.txt file does not follow recommendations, large language models may not be able to
+                    understand how you want your website to be crawled or used for training. The llms.txt file should be
+                    a Markdown file containing at least one H1 header. With my first run, I failed on number three and
+                    passed the others. I fixed my llms.txt file and re-ran. I eventually got it to pass and have posted
+                    an example of my file.
+                </p>
+                <p class="lead mb-4">
+                    I made two specific changes:</p>
+                <div class="lead mb-5 text-center">
+                    <ol class="service-list d-inline-block text-start">
+                        <li>Convert every URL to Markdown link syntax. </li>
+                        <li>Convert every section label into a proper Markdown heading (##).</li>
+                    </ol>
+                </div>
+                <div class="article-image1 mb-5">
+                    <img src="./images/llms.avif" class="img-fluid mb-4" alt="Snapshot of llms.txt file" loading="lazy"
+                        title="Image of llms.txt file" width="1400" height="1242" />
+                    <p class="image-caption">
+                        Example of a properly formatted llms.txt file.
+                    </p>
+                </div>
+                <h3 class="fw-bold mb-5">
+                    Conclusion
+                </h3>
+                <p class="lead mb-5">
+                    Google Chrome Canary is an experimental browser, which has the new Agentic Browsing feature useful
+                    for SEO analysts or web developers. Be aware that it is new and not stable as of yet, prone to
+                    crashes. Use it separate from your usual Chrome browser setup. It is generally <strong>not
+                        recommended</strong> as
+                    your primary or work browser.
+                </p>
+
+                <p class="lead mb-5">
+                    <strong>Fred Fraser</strong> is the owner/operator of Proxima Granite SEO. He is an SEO strategist,
+                    consultant,
+                    working with SaaS, B2B, tech startups and growing organizations to get seen in Google and AI.
+                    Learn more <a href="about-proxima-granite.html">about Fred</a> and check out his
+                    <a href="https://www.linkedin.com/in/frederickwfraser/" target="_blank" rel="noopener">LinkedIn
+                        profile.</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <!-- Your include.js script -->
+    <script src="js/include.js" defer></script>
+    <!-- <script
+      src="//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"
+      async
+    ></script> -->
+
+    <!-- Floating Chat Button -->
+    <style>
+        #chat-trigger {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #344973;
+            background: linear-gradient(to right, #E4E5E6, #222225);
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+    </style>
+
+    <button id="chat-trigger">💬 Chat with us</button>
+
+    <script>
+        document
+            .getElementById("chat-trigger")
+            .addEventListener("click", function () {
+                if (window.tidioChatApi) {
+                    window.tidioChatApi.open();
+                    return;
+                }
+
+                var tidioScript = document.createElement("script");
+                tidioScript.src =
+                    "//code.tidio.co/p1gyyyytvfe0wtp22kzjaktz80opyui1.js"; // replace with your actual Tidio key
+                tidioScript.async = true;
+                document.body.appendChild(tidioScript);
+
+                this.style.display = "none"; // optional: hide button after loading
+            });
+    </script>
+    <!-- end new chat button code -->
+</body>
+
+</html>
