@@ -666,6 +666,16 @@ main {
     border-radius: 8px;
 }
 
+.article-image1 img {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+
+}
+
 .image-caption {
     font-size: 0.9rem;
     color: #EAEAEA;
