@@ -6,7 +6,7 @@
   <url>
     <loc>https://www.proximagranite.com/</loc>
     <lastmod>2026-05-27T11:31:08+00:00</lastmod>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.proximagranite.com/images/proxima-granite-seo-logo.avif</image:loc>
       <image:title>Proxima Granite Logo</image:title>
@@ -16,73 +16,73 @@
   <url>
     <loc>https://www.proximagranite.com/about-proxima-granite.html</loc>
     <lastmod>2026-05-27T11:31:08+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/seo-services-new-hampshire.html</loc>
     <lastmod>2026-05-18T15:39:08+00:00</lastmod>
-    <priority>0.90</priority>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/contact-seo-nh.html</loc>
     <lastmod>2026-05-18T15:39:08+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/seo-faq-new-hampshire.html</loc>
-    <lastmod>2026-07-08T-09:18:08+00:00</lastmod>
-    <priority>0.51</priority>
+    <lastmod>2026-07-08T09:18:08+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/seo-case-study-nh.html</loc>
     <lastmod>2026-05-18T15:39:08+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/privacy-policy-proxima-granite.html</loc>
     <lastmod>2026-05-18T15:39:08+00:00</lastmod>
-    <priority>0.51</priority>
+    <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/proxima-granite-seo-articles.html</loc>
     <lastmod>2026-07-14T14:43:00+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/seo-vs-aeo-vs-geo.html</loc>
     <lastmod>2026-05-21T11:17:08+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/new-age-of-search.html</loc>
     <lastmod>2026-05-27T11:32:08+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/local-seo-positioning-shift.html</loc>
     <lastmod>2026-05-27T11:32:08+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.proximagranite.com/google-canary-case-study.html</loc>
     <lastmod>2026-07-03T17:14:08+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
     <url>
     <loc>https://www.proximagranite.com/one-year-building-proxima-granite.html</loc>
     <lastmod>2026-07-14T14:43:00+00:00</lastmod>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
