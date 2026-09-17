@@ -48,7 +48,7 @@ body::before {
         linear-gradient(90deg, #343434 1px, transparent 1px);
 
     background-size: 100px 100px;
-    opacity: 0.15;
+    opacity: 0.20;
 }
 
 body::after {
