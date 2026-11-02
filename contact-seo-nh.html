@@ -179,6 +179,7 @@
 
                                 <button type="submit">Request Consultation</button>
                             </form>
+                            <p id="form-status" role="status" aria-live="polite"></p>
                         </div>
 
                         <p class="lead mb-5">
@@ -228,10 +229,18 @@
 
     <script>
         document.getElementById('contact-form').addEventListener('submit', function (e) {
-            e.preventDefault(); // Stop the default form submission
+            e.preventDefault();
 
             var form = e.target;
             var data = new FormData(form);
+            var button = form.querySelector('button[type="submit"]');
+            var status = document.getElementById('form-status');
+
+            // Prevent duplicate submissions.
+            if (button.disabled) return;
+
+            button.disabled = true;
+            status.textContent = 'Sending your request...';
 
             fetch(form.action, {
                 method: form.method,
@@ -240,15 +249,31 @@
             })
                 .then(response => {
                     if (response.ok) {
-                        // Redirect to your thank-you page
-                        window.location.href = '/thank-you.html';
+
+                        // Track only successful Formspree submissions.
+                        if (typeof gtag === 'function') {
+                            gtag('event', 'generate_lead', {
+                                event_category: 'contact_form',
+                                event_label: 'complimentary_consultation'
+                            });
+                        }
+
+                        status.textContent = 'Request sent successfully!';
+
+                        // Allow time for the GA4 event to be sent.
+                        setTimeout(() => {
+                            window.location.href = '/thank-you.html';
+                        }, 500);
+
                     } else {
-                        alert('Oops! There was a problem submitting the form.');
+                        throw new Error('Formspree submission failed');
                     }
                 })
                 .catch(error => {
-                    alert('Oops! There was a problem submitting the form.');
-                    console.error(error);
+                    console.error('Contact form error:', error);
+                    status.textContent =
+                        'Sorry, your request could not be sent. Please try again.';
+                    button.disabled = false;
                 });
         });
     </script>
